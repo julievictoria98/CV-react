@@ -1,7 +1,12 @@
-function JSInfo() {
+import React from "react";
+
+interface JSInfoProps {
+  skillText: string;
+}
+
+function JSInfo({ skillText }: JSInfoProps) {
   return (
     <div>
-      <h1>JSInfo</h1>
       <p>
         JavaScript is a programming language that conforms to the ECMAScript
         specification. JavaScript is high-level, often just-in-time compiled,

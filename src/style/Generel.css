@@ -1,0 +1,91 @@
+:root {
+  --primarycolor: #36116b;
+  --secondary: #ebdec9;
+  --h2-font: "PT Serif", serif;
+}
+body {
+  background-color: var(--primarycolor);
+}
+h1,
+p {
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.beige-background {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  background-color: var(--secondary);
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.beige-background > h1,
+.beige-background > p {
+  color: var(--primarycolor);
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: var(--h2-font);
+}
+.beige-background p,
+.beige-background h1 {
+  grid-column: 2;
+}
+
+.skill-boxes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary);
+  padding: 1rem;
+  border-radius: 1rem;
+  justify-content: space-between;
+}
+
+.show-skill-btn {
+  cursor: pointer;
+}
+
+.icons {
+  font-size: 2em; /* Ændrer størrelsen på ikonet */
+  width: 1.2em; /* Sætter bredden på ikonet */
+  height: 2em; /* Sætter højden på ikonet */
+  color: var(--primarycolor);
+}
+
+@font-face {
+  font-family: "jostitalic";
+  src: url("jost-italic-variablefont_wght-webfont.woff2") format("woff2"),
+    url("jost-italic-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "jostregular";
+  src: url("jost-variablefont_wght-webfont.woff2") format("woff2"),
+    url("jost-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
