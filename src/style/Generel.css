@@ -2,21 +2,18 @@
   --primarycolor: #36116b;
   --secondary: #ebdec9;
   --h2-font: "PT Serif", serif;
+  --body-font: "Inter, system-ui, Avenir, Helvetica, Arial, sans-serif";
 }
 body {
   background-color: var(--primarycolor);
-}
-h1,
-p {
+  margin: 0;
 }
 
 p {
   font-size: 1rem;
   line-height: 1.8rem;
-}
-h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font: 1em;
+  font-family: var(--body-font);
 }
 
 .beige-background {
@@ -28,30 +25,52 @@ h1 {
   grid-template-columns: 1fr 3fr 1fr;
 }
 
-.beige-background > h1,
-.beige-background > p {
-  color: var(--primarycolor);
+.blue-background {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.blue-background > h1 {
+  font-size: 3rem;
+  font-family: var(--h2-font);
+  color: var(--secondary);
+  justify-self: right;
 }
 
-h1 {
+.beige-background > h1 {
   font-size: 3rem;
   font-family: var(--h2-font);
 }
-.beige-background p,
-.beige-background h1 {
+
+.beige-background * {
+  grid-column: 2;
+  color: var(--primarycolor);
+}
+
+.blue-background > * {
   grid-column: 2;
 }
 
 .skill-boxes-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
   gap: 2rem;
+  row-gap: 4rem;
+  margin-top: 1.5rem;
 }
 
 .flex-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .skill-box {
@@ -61,6 +80,7 @@ h1 {
   padding: 1rem;
   border-radius: 1rem;
   justify-content: space-between;
+  width: 15rem;
 }
 
 .show-skill-btn {
@@ -74,6 +94,21 @@ h1 {
   color: var(--primarycolor);
 }
 
+.hobby-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  row-gap: 5rem;
+  justify-items: center;
+  align-items: baseline;
+}
+
+.grade-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 25rem;
+}
 @font-face {
   font-family: "jostitalic";
   src: url("jost-italic-variablefont_wght-webfont.woff2") format("woff2"),
