@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../style/Grade.css";
+import "../../style/Grade.css";
 
 interface GradeProps {
   grade: string;
@@ -9,7 +9,7 @@ const Grade: React.FC<GradeProps> = () => {
   const [displayNumber, setDisplayNumber] = useState("0");
 
   useEffect(() => {
-    const numbers = ["0", "2", "4", "7", "10", "12"];
+    const numbers = ["00", "02", "4", "7", "10", "12"];
     let progress = 0;
 
     const updateNumber = () => {
@@ -23,7 +23,7 @@ const Grade: React.FC<GradeProps> = () => {
       }
     };
 
-    const interval = setInterval(updateNumber, 200); // Update every 200ms
+    const interval = setInterval(updateNumber, 280); // Update every 200ms
 
     return () => clearInterval(interval); // Cleanup on component unmount
   }, []);

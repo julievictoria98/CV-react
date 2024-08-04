@@ -1,4 +1,4 @@
-import "../style/Hobby.css";
+import "../../style/Hobby.css";
 interface HobbyeProps {
   HobbyName: string;
   HobbyIllu: string;

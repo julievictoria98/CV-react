@@ -1,10 +1,8 @@
-import React from "react";
-
 interface JSInfoProps {
   skillText: string;
 }
 
-function JSInfo({ skillText }: JSInfoProps) {
+function SkillInfo({ skillText }: JSInfoProps) {
   return (
     <div>
       <p>{skillText}</p>
@@ -12,4 +10,4 @@ function JSInfo({ skillText }: JSInfoProps) {
   );
 }
 
-export default JSInfo;
+export default SkillInfo;
