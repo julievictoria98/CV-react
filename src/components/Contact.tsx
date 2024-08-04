@@ -2,7 +2,26 @@ function Contact() {
   return (
     <div>
       <h1>Contact</h1>
-      <p></p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <p>a</p>
     </div>
   );
 }
