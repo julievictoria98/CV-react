@@ -1,27 +1,16 @@
+import "../style/contact.css";
+import ContactArrow from "../components/ContactArrow";
+
 function Contact() {
   return (
-    <div>
-      <h1>Contact</h1>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <p>a</p>
+    <div className="contact">
+      <div className="contact_flex_column">
+        <ContactArrow />
+        <div className="contact-flex">
+          <p className="contact-box">mail: julieradant@gmail.com</p>
+          <p className="contact-box">Phonenumber: 50523491</p>
+        </div>
+      </div>
     </div>
   );
 }

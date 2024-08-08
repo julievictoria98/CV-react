@@ -2,7 +2,7 @@ export function AboutMe() {
   return (
     <div className="about-me-grid">
       <div>
-        <h1 className="h1">About me</h1>
+        <h1 className="h2">About me</h1>
         <p>
           Mit navn er Sofie Jensen, og jeg er en passioneret og dedikeret person
           med en dyb interesse for at forstå og løse komplekse problemer. Jeg

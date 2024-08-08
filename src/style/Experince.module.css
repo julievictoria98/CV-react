@@ -1,4 +1,4 @@
-.flex-row {
+.flexrow {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,6 +9,15 @@ img {
   width: 5rem;
 }
 
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 3rem;
+  background-color: var(--tertiary);
+}
 h1 {
   font-size: 0.5rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",

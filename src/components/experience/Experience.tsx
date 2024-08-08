@@ -1,5 +1,5 @@
-import "../../style/Experince.css";
-import SuitcaseIcon from "../../assets/Icons/suitcase-icon_1.png";
+import e from "../../style/Experince.module.css";
+import SuitcaseIcon from "../../assets/Icons/suitcase-icon.svg";
 
 interface ExperienceProps {
   Experience: string;
@@ -7,10 +7,10 @@ interface ExperienceProps {
 
 function Experience({ Experience }: ExperienceProps) {
   return (
-    <div className="flex-row">
+    <div className={e.flexrow}>
       <div className="flex-row">
         <img src={SuitcaseIcon} alt="suitcase icon" />
-        <h1>{Experience}</h1>
+        <h1 className="h3">{Experience}</h1>
       </div>
       <p>2014</p>
     </div>

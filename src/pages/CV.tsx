@@ -86,19 +86,19 @@ function CV() {
       <div ref={aboutMeRef}>
         <AboutMe />
       </div>
-      <div ref={skillsRef} className="blue-background">
+      <div ref={skillsRef}>
         <Skills />
       </div>
-      <div ref={experiencesRef} className="beige-background">
-        <Experiences />
-      </div>
-      <div ref={hobbiesRef} className="blue-background">
-        <Hobbies />
-      </div>
-      <div ref={gradesRef} className="beige-background">
+      <div ref={gradesRef}>
         <Grades />
       </div>
-      <div ref={contactRef} className="blue-background">
+      <div ref={experiencesRef}>
+        <Experiences />
+      </div>
+      <div ref={hobbiesRef}>
+        <Hobbies />
+      </div>
+      <div ref={contactRef}>
         <Contact />
       </div>
     </div>

@@ -8,7 +8,7 @@ function Hobby({ HobbyName, HobbyIllu, HobbyIlluAlt }: HobbyeProps) {
   return (
     <div className="hobby">
       <img className="hobby-img" src={HobbyIllu} alt={HobbyIlluAlt} />
-      <h1>{HobbyName}</h1>
+      <h1 className="h3">{HobbyName}</h1>
     </div>
   );
 }

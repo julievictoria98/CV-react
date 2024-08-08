@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap");
 
 :root {
-  --primarycolor: #b3d5b9;
+  --primarycolor: #eee4d6;
   --secondary: #ebdec9;
+  --tertiary: #d0c4b1;
+  --h3--font: "Quicksand", sans-serif;
   --h2-font: "PT Serif", serif;
-  --body-font: "Inter, system-ui, Avenir, Helvetica, Arial, sans-serif";
   --h1-font: "Old Standard TT", serif;
   --font-color: #514c45;
 }
@@ -17,58 +19,40 @@ p {
   font-size: 1rem;
   line-height: 1.8rem;
   font: 1em;
-  font-family: var(--body-font);
+  font-family: var(--h3--font);
 }
 
-.beige-background {
-  padding-top: 2rem;
-  padding-bottom: 5rem;
-  background-color: var(--secondary);
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-}
-
-.blue-background {
-  padding-top: 2rem;
-  padding-bottom: 5rem;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-}
-.blue-background > h1 {
-  font-size: 3rem;
-  font-family: var(--h1-font);
-  color: var(--secondary);
-  justify-self: right;
-}
-
-.blue-background > h2 {
+.h2 {
   font-size: 3rem;
   font-family: var(--h2-font);
-  color: var(--secondary);
+  font-weight: 400;
+  margin: 0.2rem;
 }
 
-.beige-background > h1 {
-  font-size: 3rem;
-  font-family: var(--h2-font);
+.h3 {
+  color: var(--font-color);
+  font-family: var(--h3--font);
 }
-
-.beige-background * {
-  grid-column: 2;
-  color: var(--primarycolor);
+.h3 {
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
 }
-
-.blue-background > * {
-  grid-column: 2;
+.skill-boxes-grid h1 {
+  grid-column: 1/4;
+  justify-self: left;
 }
 
 .skill-boxes-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  justify-items: left;
   gap: 2rem;
-  row-gap: 4rem;
-  margin-top: 1.5rem;
+  row-gap: 3rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 .flex-row {
@@ -77,20 +61,17 @@ p {
   justify-content: space-between;
 }
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 .skill-box {
   display: flex;
   flex-direction: column;
-  background-color: var(--secondary);
+  background-color: var(--tertiary);
   padding: 1rem;
   border-radius: 1rem;
   justify-content: space-between;
   width: 15rem;
+}
+.skill-box h2 {
+  color: var(--font-color);
 }
 
 .show-skill-btn {
@@ -101,34 +82,21 @@ p {
   font-size: 2em; /* Ændrer størrelsen på ikonet */
   width: 1.2em; /* Sætter bredden på ikonet */
   height: 2em; /* Sætter højden på ikonet */
-  color: var(--primarycolor);
-}
-
-.hobby-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  gap: 3rem;
-  row-gap: 5rem;
-  justify-items: center;
-  align-items: baseline;
-}
-
-.grade-flex {
-  display: flex;
-  flex-direction: row;
-  gap: 25rem;
+  color: var(--font-color);
 }
 
 .about-me-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   margin: 0;
 }
 
 .about-me-grid > :first-child {
   background-color: #98bea0;
-  padding: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   margin: 0;
 }
 h1,

@@ -6,9 +6,22 @@
   width: 9rem;
 }
 
-.hobby h1 {
-  font-size: 1.5rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: var(--secondary);
+.hobbies {
+  margin-left: 15rem;
+  margin-bottom: 8rem;
+  margin-top: 8rem;
+}
+
+.hobby-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  row-gap: 5rem;
+  justify-items: left;
+  align-items: baseline;
+  margin-top: 2rem;
+}
+.hobby-grid h1 {
+  grid-column: 1/4;
+  justify-self: left;
 }

@@ -1,10 +1,12 @@
 import Experience from "./Experience";
+import e from "../../style/Experince.module.css";
 
 function Experiences() {
   return (
     <>
-      <h1>Experince</h1>
-      <div className="flex-column">
+      <div className={e.flexcolumn}>
+        <h1 className="h2">Experince</h1>
+
         <Experience Experience="Normal su-chef" />
         <Experience Experience="Barnepige" />
         <Experience Experience="tester3" />

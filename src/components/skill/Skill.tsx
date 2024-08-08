@@ -12,7 +12,7 @@ function Skill({ skillName, skillText }: SkillProps) {
   return (
     <div className="skill-box">
       <div className="flex-row">
-        <h2>{skillName}</h2>
+        <h2 className="h3">{skillName}</h2>
         <div
           className="show-skill-btn"
           onClick={() => setShowSkillInfo(!showSkillInfo)}

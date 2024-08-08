@@ -46,6 +46,12 @@ function NavBar({
           onClick={scrollToExperiences}
           className={activeSection === "experiences" ? s.active : ""}
         >
+          Grades
+        </button>
+        <button
+          onClick={scrollToContact}
+          className={activeSection === "contact" ? s.active : ""}
+        >
           Experiences
         </button>
         <button
@@ -57,12 +63,6 @@ function NavBar({
         <button
           onClick={scrollToGrades}
           className={activeSection === "grades" ? s.active : ""}
-        >
-          Grades
-        </button>
-        <button
-          onClick={scrollToContact}
-          className={activeSection === "contact" ? s.active : ""}
         >
           Contact
         </button>

@@ -1,61 +1,47 @@
-/* Grade.css */
-.ring-container {
-  position: relative;
-  width: 12rem;
-  height: 12rem;
+.grade-image-container {
+  background-image: url(../assets/Icons/doodle-ring.svg);
+  background-size: cover;
+  width: 14rem;
+  height: 15.3rem;
+  text-align: center;
+  align-content: center;
+}
+.grade-flex {
+  display: flex;
+  flex-direction: column;
 }
 
-.ring {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 5px solid transparent;
-
-  animation: drawRing 1.5s linear forwards;
-}
-
-.number {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.grade-image-container h1 {
   font-size: 4rem;
-  font-weight: bold;
-  color: var(--primarycolor);
-  margin: 0;
+  font-family: var(--h1-font);
+  color: var(--font-color);
 }
 
-/* Keyframes for the drawRing animation */
-@keyframes drawRing {
-  0% {
-    transform: rotate(0deg);
-    border-top: 5px solid var(--primarycolor);
-  }
+.grades {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
 
-  25% {
-    transform: rotate(90deg);
-    border-top: 5px solid var(--primarycolor);
-    border-right: 5px solid var(--primarycolor);
-  }
+.grades > h1 {
+  margin-left: 20rem;
+}
+.grade-text {
+  width: 28rem;
+}
 
-  50% {
-    transform: rotate(180deg);
-    border-top: 5px solid var(--primarycolor);
-    border-right: 5px solid var(--primarycolor);
-  }
-
-  75% {
-    transform: rotate(360deg);
-    border-top: 5px solid var(--primarycolor);
-    border-right: 5px solid var(--primarycolor);
-    border-bottom: 5px solid var(--primarycolor);
-  }
-
-  100% {
-    transform: rotate(360deg);
-    border-top: 5px solid var(--primarycolor);
-    border-right: 5px solid var(--primarycolor);
-    border-bottom: 5px solid var(--primarycolor);
-    border-left: 5px solid var(--primarycolor);
-  }
+.grade-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+.grade-flex-row :nth-child(2) {
+  align-self: flex-start;
+}
+.grade-flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }

@@ -10,18 +10,21 @@
 
 .navbar button {
   background-color: transparent;
-  border: 1px black solid;
-  color: var(--font-color);
-  font-size: 1.5rem;
+  color: var(--primarycolor);
+  font-size: 1.3rem;
   cursor: pointer;
-  background-color: rgb(227, 190, 147);
-  text-align: left;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  border: none;
+  background-color: #665f5f;
+  transition: transform 0.3s, width 0.3s;
 }
 
 .navbar button.active {
-  background-color: rgb(
-    255,
-    165,
-    0
-  ); /* Example: highlight color for active button */
+  transform: translateX(-2rem);
+  width: calc(100% + 2rem); /* Adjust the width to ensure no gap */
 }
