@@ -1,19 +1,19 @@
 .hero_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
 }
 
 .hero_img {
-  width: 75%;
+  width: 100%;
 }
 
 .h1 {
   font-family: var(--h1-font);
   font-weight: 400;
   font-style: normal;
-  font-size: 4.5em;
+  font-size: 3em;
   line-height: 1.1;
   padding: 0;
   margin-top: 1rem;
@@ -27,4 +27,37 @@
   line-height: 1.1;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  .hero_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .hero_img {
+    width: 75%;
+  }
+
+  .h1 {
+    font-family: var(--h1-font);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.5em;
+    line-height: 1.1;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .h2 {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+  }
 }

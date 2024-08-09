@@ -1,8 +1,13 @@
+.experience {
+  margin-top: 4;
+  margin-bottom: 4rem;
+}
 .flexrow {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 0.8rem;
 }
 
 img {
@@ -13,13 +18,25 @@ img {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
   padding-bottom: 3rem;
+  padding-top: 3rem;
   background-color: var(--tertiary);
 }
 h1 {
   font-size: 0.5rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.workplace {
+  margin: 0;
+  padding: 0;
+}
+
+.experince_item h1,
+p {
+  margin: 0;
+  padding: 0;
 }

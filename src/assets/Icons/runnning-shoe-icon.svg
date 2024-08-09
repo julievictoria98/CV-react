@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_7" data-name="Layer 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.13 80.13">
+  <path d="M37.29,35.56s-5.5-4.99-.81-8.55,5.4-7.13,5.4-7.13c0,0,8.96-11.71,14.87-12.02,0,0,2.75-.2,3.36,8.76s11.51,11.3,15.07,9.98c0,0,6.93,22.71,6.82,26.68,0,0,21.49-2.55,16.5,24.75,0,0-28.41-1.12-29.74-3.16s-30.65-35.34-31.47-39.31Z" style="fill: #aac6af; stroke-width: 0px;"/>
+  <rect x="8.86" y="46.99" width="29.75" height="4.28" rx="2.14" ry="2.14" transform="translate(2.98 -1.33) rotate(3.43)" style="fill: #aac6af; stroke-width: 0px;"/>
+  <rect x="16" y="55.37" width="30.66" height="4.28" rx="2.14" ry="2.14" transform="translate(3.5 -1.77) rotate(3.43)" style="fill: #aac6af; stroke-width: 0px;"/>
+  <rect x="21.53" y="63.77" width="30.66" height="4.28" rx="2.14" ry="2.14" transform="translate(4.01 -2.09) rotate(3.43)" style="fill: #aac6af; stroke-width: 0px;"/>
+  <g>
+    <polygon points="44.7 39.52 52.1 48.29 60.49 43.9 57.32 39.52 44.7 39.52" style="fill: #e8efe9; stroke-width: 0px;"/>
+    <polygon points="53.65 50.38 58.26 55.82 63.48 53.1 61.51 50.38 53.65 50.38" style="fill: #e8efe9; stroke-width: 0px;"/>
+    <polygon points="49.79 45.54 55.34 52.39 61.62 48.97 59.24 45.54 49.79 45.54" style="fill: #e8efe9; stroke-width: 0px;"/>
+  </g>
+  <rect x="71.44" y="31.51" width="1.48" height="7.83" rx=".49" ry=".49" transform="translate(94.34 -41.86) rotate(79.86)" style="fill: #f9f9f9; stroke-width: 0px;"/>
+  <rect x="72.69" y="35.03" width="1.48" height="7.83" rx=".49" ry=".49" transform="translate(98.84 -40.19) rotate(79.86)" style="fill: #f9f9f9; stroke-width: 0px;"/>
+  <rect x="73.47" y="38.55" width="1.48" height="7.83" rx=".49" ry=".49" transform="translate(102.95 -38.06) rotate(79.86)" style="fill: #f9f9f9; stroke-width: 0px;"/>
+</svg>

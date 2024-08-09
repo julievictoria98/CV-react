@@ -3,16 +3,21 @@ import SuitcaseIcon from "../../assets/Icons/suitcase-icon.svg";
 
 interface ExperienceProps {
   Experience: string;
+  ExperinceYear: string;
+  WorkPlace: string;
 }
 
-function Experience({ Experience }: ExperienceProps) {
+function Experience({ Experience, ExperinceYear, WorkPlace }: ExperienceProps) {
   return (
     <div className={e.flexrow}>
-      <div className="flex-row">
+      <div className={e.flexrow}>
         <img src={SuitcaseIcon} alt="suitcase icon" />
-        <h1 className="h3">{Experience}</h1>
+        <div className={e.experince_item}>
+          <h1 className="h3">{Experience}</h1>
+          <p className={e.workplace}>{WorkPlace}</p>
+        </div>
       </div>
-      <p>2014</p>
+      <p>{ExperinceYear}</p>
     </div>
   );
 }

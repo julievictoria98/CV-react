@@ -39,20 +39,7 @@ p {
   font-weight: 400;
 }
 .skill-boxes-grid h1 {
-  grid-column: 1/4;
-  justify-self: left;
-}
-
-.skill-boxes-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: left;
-  gap: 2rem;
-  row-gap: 3rem;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  justify-self: center;
 }
 
 .flex-row {
@@ -85,20 +72,6 @@ p {
   color: var(--font-color);
 }
 
-.about-me-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  margin: 0;
-}
-
-.about-me-grid > :first-child {
-  background-color: #98bea0;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin: 0;
-}
 h1,
 h2,
 p {
@@ -123,4 +96,63 @@ h1 {
     url("jost-variablefont_wght-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+
+.skill-boxes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 2rem;
+  row-gap: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.about-me-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+}
+
+.about-me-grid > :first-child {
+  background-color: #98bea0;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .about-me-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin: 0;
+  }
+
+  .about-me-grid > :first-child {
+    background-color: #98bea0;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 0;
+  }
+  .skill-boxes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: left;
+    gap: 2rem;
+    row-gap: 3rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .skill-boxes-grid h1 {
+    grid-column: 1/4;
+    justify-self: left;
+  }
 }

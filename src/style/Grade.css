@@ -1,8 +1,8 @@
 .grade-image-container {
   background-image: url(../assets/Icons/doodle-ring.svg);
   background-size: cover;
-  width: 14rem;
-  height: 15.3rem;
+  width: 9.2rem;
+  height: 10rem;
   text-align: center;
   align-content: center;
 }
@@ -11,10 +11,20 @@
   flex-direction: column;
 }
 
+.grade-flex > :nth-child(2) {
+  order: -1;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  text-align: center;
+}
+
 .grade-image-container h1 {
   font-size: 4rem;
   font-family: var(--h1-font);
   color: var(--font-color);
+  justify-content: center;
+  justify-items: center;
 }
 
 .grades {
@@ -23,25 +33,75 @@
 }
 
 .grades > h1 {
-  margin-left: 20rem;
+  justify-self: center;
 }
 .grade-text {
   width: 28rem;
 }
 
-.grade-flex-row {
+.grade-flex {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-left: 20rem;
-  padding-right: 20rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
-.grade-flex-row :nth-child(2) {
+.grade-flex :nth-child(2) {
   align-self: flex-start;
 }
-.grade-flex-column {
+.grades-flex {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .grade-image-container {
+    background-image: url(../assets/Icons/doodle-ring.svg);
+    background-size: cover;
+    width: 14rem;
+    height: 15.3rem;
+    text-align: center;
+    align-content: center;
+  }
+  .grade-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grade-image-container h1 {
+    font-size: 4rem;
+    font-family: var(--h1-font);
+    color: var(--font-color);
+  }
+
+  .grades {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  .grades > h1 {
+    margin-left: 20rem;
+  }
+  .grade-text {
+    width: 28rem;
+  }
+
+  .grade-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+  .grade-flex :nth-child(2) {
+    align-self: flex-start;
+  }
+  .grades-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
 }

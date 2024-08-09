@@ -3,6 +3,8 @@
   padding-right: 20rem;
   justify-content: center;
   justify-items: center;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 .contact-box {
   background-color: var(--tertiary);
