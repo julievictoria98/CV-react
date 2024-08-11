@@ -10,9 +10,19 @@
   --h1-font: "Old Standard TT", serif;
   --font-color: #514c45;
 }
+
+:root {
+  --base-font-size: 14px; /* Default base font size for small screens */
+  --h1-size: 2.853rem; /* Default h1 size (approx 39.942px) */
+  --h2-size: 2.542rem; /* Default h2 size (approx 35.588px) */
+  --h3-size: 2.257rem; /* Default h3 size (approx 31.598px) */
+  --p-size: 1rem; /* Default paragraph size (approx 14px) */
+}
+
 body {
   background-color: var(--primarycolor);
   margin: 0;
+  padding: 0;
 }
 
 p {
@@ -23,7 +33,7 @@ p {
 }
 
 .h2 {
-  font-size: 3rem;
+  font-size: var(--h2-size);
   font-family: var(--h2-font);
   font-weight: 400;
   margin: 0.2rem;
@@ -32,6 +42,7 @@ p {
 .h3 {
   color: var(--font-color);
   font-family: var(--h3--font);
+  font-size: var(--h3-size);
 }
 .h3 {
   font-size: 1.5rem;
@@ -125,6 +136,13 @@ h1 {
 }
 
 @media (min-width: 768px) {
+  :root {
+    --base-font-size: 16px;
+    --h1-size: 3.169rem; /* 50.704px */
+    --h2-size: 2.82rem; /* 45.12px */
+    --h3-size: 2.513rem; /* 40.208px */
+  }
+
   .about-me-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -154,5 +172,14 @@ h1 {
   .skill-boxes-grid h1 {
     grid-column: 1/4;
     justify-self: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --base-font-size: 18px;
+    --h1-size: 3.556rem; /* 64.008px */
+    --h2-size: 3.166rem; /* 56.988px */
+    --h3-size: 2.827rem; /* 50.886px */
   }
 }

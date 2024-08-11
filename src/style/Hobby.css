@@ -1,59 +1,80 @@
-.hobby {
-  text-align: center;
-  width: 12rem;
-  height: 12rem;
-  align-content: flex-end;
-}
-
-.hobby:hover {
-  background-color: var(--tertiary);
-  border-radius: 28px;
-  transition: 0.4s;
-}
-
-.hobby:hover img {
-  opacity: 0;
-}
-
-.hobby:hover h1 {
-  opacity: 0;
-}
-
-.hobby:hover .hover_text {
-  display: block;
-  position: absolute;
-  margin-top: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.hover_container {
-  position: relative;
-}
-.hover_text {
-  display: none;
-  position: absolute;
-}
-.hobby img {
-  width: 9rem;
-}
-
-.hobbies {
-  margin-left: 15rem;
-  margin-bottom: 8rem;
-  margin-top: 8rem;
-}
-
 .hobby-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
-  row-gap: 5rem;
-  justify-items: left;
+  justify-items: center;
+  row-gap: 3rem;
   align-items: baseline;
   margin-top: 2rem;
 }
-.hobby-grid h1 {
-  grid-column: 1/4;
-  justify-self: left;
+
+.hover_text {
+  max-width: 14rem;
+  margin-bottom: 1rem;
+}
+
+.hobbies {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hobby {
+    text-align: center;
+    width: 12rem;
+    height: 12rem;
+    align-content: flex-end;
+  }
+
+  .hobby:hover {
+    background-color: var(--tertiary);
+    border-radius: 28px;
+    transition: 0.4s;
+  }
+
+  .hobby:hover img {
+    opacity: 0;
+  }
+
+  .hobby:hover h1 {
+    opacity: 0;
+  }
+
+  .hobby:hover .hover_text {
+    display: block;
+    position: absolute;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hover_container {
+    position: relative;
+  }
+  .hover_text {
+    display: none;
+    position: absolute;
+  }
+  .hobby img {
+    width: 9rem;
+  }
+
+  .hobbies {
+    margin-left: 15rem;
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+  }
+
+  .hobby-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    row-gap: 5rem;
+    justify-items: left;
+    align-items: baseline;
+    margin-top: 2rem;
+  }
+  .hobby-grid h1 {
+    grid-column: 1/4;
+    justify-self: left;
+  }
 }
