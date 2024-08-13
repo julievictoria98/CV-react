@@ -6,6 +6,7 @@ import Hobbies from "../components/hobby/Hobbies";
 import Grades from "../components/grade/Grades";
 import Contact from "../components/Contact";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 import { useRef, useState, useEffect } from "react";
 
 function CV() {
@@ -101,6 +102,7 @@ function CV() {
       <div ref={contactRef}>
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 }

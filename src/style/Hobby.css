@@ -58,6 +58,7 @@
     background-color: var(--tertiary);
     border-radius: 28px;
     transition: 0.4s;
+    cursor: pointer;
   }
 
   .hobby:hover img {

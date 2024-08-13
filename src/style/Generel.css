@@ -5,6 +5,7 @@
   --primarycolor: #eee4d6;
   --secondary: #ebdec9;
   --tertiary: #d0c4b1;
+  --quaternary: #98bea0;
   --h3--font: "Quicksand", sans-serif;
   --h2-font: "PT Serif", serif;
   --h1-font: "Old Standard TT", serif;
@@ -128,7 +129,7 @@ h1 {
 }
 
 .about-me-grid > :first-child {
-  background-color: #98bea0;
+  background-color: var(--quaternary);
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 3rem;
