@@ -5,6 +5,7 @@
   height: 10rem;
   text-align: center;
   align-content: center;
+  margin-top: 2rem;
 }
 .grade-flex {
   display: flex;
@@ -33,10 +34,10 @@
 }
 
 .grades > h1 {
-  justify-self: center;
+  text-align: center;
 }
 .grade-text {
-  width: 28rem;
+  width: 25rem;
 }
 
 .grade-flex {
@@ -44,8 +45,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-left: 5rem;
-  padding-right: 5rem;
+
+  gap: 2rem;
 }
 
 .grades-flex {
@@ -59,8 +60,8 @@
   .grade-image-container {
     background-image: url(../assets/Icons/doodle-ring.svg);
     background-size: cover;
-    width: 14rem;
-    height: 15.3rem;
+    width: 11rem;
+    height: 12rem;
     text-align: center;
     align-content: center;
   }
@@ -80,9 +81,6 @@
     margin-bottom: 8rem;
   }
 
-  .grades > h1 {
-    margin-left: 20rem;
-  }
   .grade-text {
     width: 28rem;
   }
@@ -91,9 +89,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 4rem;
     align-items: center;
-    padding-left: 20rem;
-    padding-right: 20rem;
   }
   .grade-flex :nth-child(2) {
     align-self: flex-start;
@@ -102,9 +99,22 @@
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .grade-flex > :nth-child(2) {
     order: 1;
+  }
+  .grades > h1 {
+    text-align: left;
+    padding-left: 25rem;
+  }
+}
+
+@media (min-width: 1120px) {
+  .grade-flex {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }

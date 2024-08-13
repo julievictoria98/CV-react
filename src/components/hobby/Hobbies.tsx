@@ -11,7 +11,7 @@ function Hobbies() {
     <>
       <div className="hobbies">
         <h1 className="h2">Hobbies</h1>
-        <div className="hobby-grid">
+        <div className="hobby_grid">
           <Hobby
             HobbyName="Reading"
             HobbyIlluAlt="Book Icon"

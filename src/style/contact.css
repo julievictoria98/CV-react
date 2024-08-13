@@ -44,10 +44,10 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1120px) {
   .contact {
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
     justify-content: center;
     justify-items: center;
     margin-top: 8rem;

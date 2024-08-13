@@ -1,11 +1,16 @@
-.hobby-grid {
+.hobby_grid {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
   row-gap: 3rem;
   align-items: baseline;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+}
+
+.hobby img {
+  width: 6.2rem;
+  margin-bottom: 1rem;
 }
 
 .hover_text {
@@ -13,16 +18,40 @@
   margin-bottom: 1rem;
 }
 
+.hobby_flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.hobby_flex :nth-child(2) {
+  align-self: center;
+  order: -3;
+}
+
 .hobbies {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+.hobby_name {
+  display: none;
+}
+
+@media (min-width: 690px) {
+  .hobby_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hobby img {
+    width: 7rem;
+  }
   .hobby {
     text-align: center;
     width: 12rem;
     height: 12rem;
     align-content: flex-end;
+  }
+  .hobby_name {
+    display: block;
   }
 
   .hobby:hover {
@@ -57,14 +86,35 @@
   .hobby img {
     width: 9rem;
   }
+  .hobby_flex :nth-child(2) {
+    align-self: center;
+    order: 0;
+  }
+}
 
+@media (min-width: 768px) {
   .hobbies {
-    margin-left: 15rem;
     margin-bottom: 8rem;
     margin-top: 8rem;
   }
 
-  .hobby-grid {
+  .hobby_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    row-gap: 5rem;
+    justify-items: center;
+    align-items: baseline;
+    margin-top: 2rem;
+  }
+  .hobby-grid h1 {
+    grid-column: 1/4;
+    justify-self: left;
+  }
+}
+
+@media (min-width: 1120px) {
+  .hobby_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -73,8 +123,7 @@
     align-items: baseline;
     margin-top: 2rem;
   }
-  .hobby-grid h1 {
-    grid-column: 1/4;
-    justify-self: left;
+  .hobbies {
+    margin-left: 8rem;
   }
 }
