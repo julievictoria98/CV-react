@@ -1,3 +1,5 @@
+import "../style/Generel.css";
+
 import Hero from "../components/Hero";
 import Skills from "../components/skill/Skills";
 import AboutMe from "../components/AboutMe";
@@ -81,7 +83,7 @@ function CV() {
         }
         activeSection={activeSection}
       />
-      <div ref={heroRef} className="blue-background">
+      <div ref={heroRef}>
         <Hero />
       </div>
       <div ref={aboutMeRef}>

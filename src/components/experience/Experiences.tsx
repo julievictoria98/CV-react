@@ -12,11 +12,20 @@ function Experiences() {
           WorkPlace="Normal"
         />
         <Experience
-          Experience="Cashier"
+          Experience="Academic Tutor"
           ExperinceYear="2021/2022"
-          WorkPlace="Bauhaus"
+          WorkPlace="Private Household"
         />
-        <Experience Experience="Nanny" ExperinceYear="2018/2021" WorkPlace="" />
+        <Experience
+          Experience="Family Assistant"
+          ExperinceYear="2017/2020"
+          WorkPlace="Private Household"
+        />
+        <Experience
+          Experience="Sales Assistant (Seasonal)"
+          ExperinceYear="2015/2016"
+          WorkPlace="Zoologisk Have"
+        />
       </div>
     </div>
   );

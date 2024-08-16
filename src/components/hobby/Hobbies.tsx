@@ -16,37 +16,42 @@ function Hobbies() {
             HobbyName="Reading"
             HobbyIlluAlt="Book Icon"
             HobbyIllu={BookIcon}
-            HoverText="I love reading books, especially fantasy and science fiction."
+            HoverText="I enjoy reading as a break from screens, with psychological thrillers being my favorite choice.
+
+
+"
           />
           <Hobby
             HobbyName="Video Games"
             HobbyIlluAlt="Controller Icon"
             HobbyIllu={controllerIcon}
-            HoverText="I enjoy playing video games, especially RPGs and strategy games."
+            HoverText="
+I enjoyed playing video games as a kid and still make time for it today."
           />
           <Hobby
             HobbyName=" Music"
             HobbyIlluAlt="Headphones Icon"
             HobbyIllu={HeadphonesIcon}
-            HoverText="I love listening to music, especially rock and metal."
+            HoverText="I love listening to music, especially indie folk and pop."
           />
           <Hobby
             HobbyName="Friends"
             HobbyIlluAlt="People Icon"
             HobbyIllu={FriendsIcon}
-            HoverText="I enjoy spending time with my friends, going out or staying"
+            HoverText="Im always up for a good debate with my friends, whether it's about music or politics"
           />
           <Hobby
             HobbyName="Drawing"
             HobbyIlluAlt="Painting on rocks Icon"
             HobbyIllu={DrawingRocksIcon}
-            HoverText="I enjoy drawing, especially on rocks."
+            HoverText="I enjoy drawing, espcially on rocks that I find on walks."
           />
           <Hobby
             HobbyName="Running"
             HobbyIlluAlt="runningshoe Icon"
             HobbyIllu={RunningShoeIcon}
-            HoverText="I enjoy running, especially in the forest."
+            HoverText="
+I enjoy running as it provides a great way to clear my mind and stay active"
           />
         </div>
       </div>

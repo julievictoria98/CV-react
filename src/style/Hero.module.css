@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap");
+
 .hero_grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -6,11 +8,11 @@
 }
 
 .hero_img {
-  width: 100%;
+  width: 20%;
 }
 
 .h1 {
-  font-family: var(--h1-font);
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 3em;
@@ -28,27 +30,60 @@
   margin: 0;
   padding: 0;
 }
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flex_rows {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  grid-column: 2;
+}
+
+.flex_rows * {
+  background-color: var(--tertiary);
+  border: 5px solid var(--tertiary);
+  border-radius: 10px;
+}
+.hero_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 3rem;
+  padding-left: 5rem;
+  padding-right: 15rem;
+  margin-bottom: 5rem;
+  border-bottom: 3px solid var(--quaternary);
+}
+.hero_img {
+  width: 10rem;
+}
 
 @media (min-width: 768px) {
   .hero_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
+  }
+  .hero_img {
+    width: 27rem;
   }
 
-  .hero_img {
-    width: 75%;
+  .flex_column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .h1 {
     font-family: var(--h1-font);
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
-    font-size: 4.5em;
-    line-height: 1.1;
-    padding: 0;
-    margin-top: 1rem;
+    font-size: 5.5em;
+    margin-bottom: 2rem;
   }
 
   .h2 {

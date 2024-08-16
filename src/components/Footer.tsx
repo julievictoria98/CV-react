@@ -1,4 +1,4 @@
-import "../style/footer.css";
+import "../style/Footer.css";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -31,7 +31,10 @@ function Footer() {
             <p>LinkedIn</p>
           </div>
           <div className="contact_socials_flex">
-            <a href="">
+            <a
+              href="https://www.linkedin.com/in/julie-mundrup-radant-93227b28a/"
+              target="blank"
+            >
               <FaGithubSquare style={{ color: "#514c45" }} />
             </a>
             <p>GitHub</p>

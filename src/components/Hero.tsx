@@ -1,6 +1,8 @@
-import JuliePhoto from "../assets/Icons/Julie-CV-photo.png";
-import "../style/Generel.css";
+import JuliePhoto from "../imgs/cv-img-shape1.png";
 import s from "../style/Hero.module.css";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
+
 function Hero() {
   return (
     <header>
@@ -9,6 +11,16 @@ function Hero() {
         <div>
           <h2 className={s.h2}>Frontend Developer</h2>
           <h1 className={s.h1}>Julie Radant</h1>
+          <div className={s.flex_rows}>
+            <div className={s.flex_row}>
+              <MdEmail style={{ color: "#514c45" }} />
+              <p>julieradant@gmail.com</p>
+            </div>
+            <div className={s.flex_row}>
+              <FaLinkedin style={{ color: "#514c45" }} />
+              <p>/julie-mundrup-radant</p>
+            </div>
+          </div>
         </div>
       </div>
     </header>
