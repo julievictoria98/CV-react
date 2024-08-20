@@ -36,7 +36,10 @@ Additionally, I have knowledge of array methods such as .map(), .filter(), .redu
             />
           </div>
           <div>
-            <Skill skillName="Figma" skillText="Tailwind skill text" />
+            <Skill
+              skillName="Figma"
+              skillText="Throughout my entire education, Figma has been an essential tool in the design process. It has played a key role in creating mockups, as well as both high-fidelity and low-fidelity prototypes, that has made it easier than ever to perform user tests. Figma has significantly enhanced my understanding of atomic design, which has improved the process of creating design system. Moreover, Figma has made it easier to move from design to code by using tools such as design tokens and auto layout."
+            />
           </div>
           <div>
             <Skill
