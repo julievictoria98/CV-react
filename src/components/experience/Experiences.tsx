@@ -5,7 +5,7 @@ function Experiences() {
   return (
     <div className={e.experience}>
       <div className={e.flexcolumn}>
-        <h1 className="h2">Experince</h1>
+        <h1 className="h2">Former Jobs</h1>
         <Experience
           Experience="Assistant manager"
           ExperinceYear="2022/2023"

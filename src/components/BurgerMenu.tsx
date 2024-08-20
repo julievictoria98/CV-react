@@ -48,7 +48,7 @@ function BurgerMenu({
             </li>
             <li onClick={() => handleMenuItemClick(scrollToSkills)}>Skills</li>
             <li onClick={() => handleMenuItemClick(scrollToExperiences)}>
-              Experiences
+              Former Jobs
             </li>
             <li onClick={() => handleMenuItemClick(scrollToHobbies)}>
               Hobbies

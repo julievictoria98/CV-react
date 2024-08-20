@@ -33,9 +33,6 @@
   margin-bottom: 8rem;
 }
 
-.grades > h1 {
-  text-align: center;
-}
 .grade-text {
   width: 25rem;
 }
@@ -106,15 +103,14 @@
   .grade-flex > :nth-child(2) {
     order: 1;
   }
-  .grades > h1 {
-    text-align: left;
-    padding-left: 25rem;
-  }
 }
 
 @media (min-width: 1120px) {
   .grade-flex {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+  .grades-flex > h1 {
+    padding-right: 20rem;
   }
 }

@@ -127,4 +127,7 @@
   .hobbies {
     margin-left: 8rem;
   }
+  .hobbies {
+    text-align: left;
+  }
 }

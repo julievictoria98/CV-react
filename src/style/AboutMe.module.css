@@ -12,6 +12,7 @@
 .based_in_flex {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .about_me_grid > :first-child {
   background-color: #98bea0;
