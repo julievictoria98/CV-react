@@ -23,22 +23,23 @@ function Footer() {
         </div>
         <div>
           <h2 className="h4">Socials</h2>
+          <a
+            href="https://www.linkedin.com/in/julie-mundrup-radant-93227b28a/"
+            target="blank"
+          >
+            <div className="contact_socials_flex">
+              <FaLinkedin style={{ color: "#443f39" }} />
 
-          <div className="contact_socials_flex">
-            <a href="">
-              <FaLinkedin style={{ color: "#514c45" }} />
-            </a>
-            <p>LinkedIn</p>
-          </div>
-          <div className="contact_socials_flex">
-            <a
-              href="https://www.linkedin.com/in/julie-mundrup-radant-93227b28a/"
-              target="blank"
-            >
-              <FaGithubSquare style={{ color: "#514c45" }} />
-            </a>
-            <p>GitHub</p>
-          </div>
+              <p>LinkedIn</p>
+            </div>
+          </a>
+          <a href="https://github.com/julievictoria98" target="blank">
+            <div className="contact_socials_flex">
+              <FaGithubSquare style={{ color: "#443f39" }} />
+
+              <p>GitHub</p>
+            </div>
+          </a>
         </div>
       </div>
     </footer>

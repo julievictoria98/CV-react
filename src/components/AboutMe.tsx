@@ -28,7 +28,7 @@ export function AboutMe() {
             <div>
               <h2 className="h3">Based in</h2>
               <div className={s.based_in_flex}>
-                <FaLocationDot />
+                <FaLocationDot style={{ color: "#443f39" }} />
                 <p>Copenhagen, Denmark</p>
               </div>
             </div>

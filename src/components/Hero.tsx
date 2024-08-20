@@ -13,11 +13,11 @@ function Hero() {
           <h1 className="display_title">Julie Radant</h1>
           <div className={s.hero_flex}>
             <div className={s.flex_row}>
-              <MdEmail style={{ color: "#514c45" }} />
+              <MdEmail style={{ color: "#443f39" }} />
               <p>julieradant@gmail.com</p>
             </div>
             <div className={s.flex_row}>
-              <FaLinkedin style={{ color: "#514c45" }} />
+              <FaLinkedin style={{ color: "#443f39" }} />
               <p>/julie-mundrup-radant</p>
             </div>
           </div>

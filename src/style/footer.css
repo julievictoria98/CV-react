@@ -9,7 +9,6 @@
 
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
 }
 
 a {
@@ -27,7 +26,8 @@ a {
 .contact_socials_flex {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
+  gap: 0.2rem;
 }
 
 @media (min-width: 300px) {
