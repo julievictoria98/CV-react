@@ -11,7 +11,7 @@ function Footer() {
       <div className="footer">
         <img className="logo" src={logo} alt="" />
         <div>
-          <h2>Contact</h2>
+          <h2 className="h4">Contact</h2>
           <div className="contact_socials_flex">
             <FaPhoneAlt style={{ color: "#514c45" }} />
             <p>+45 50 52 34 91</p>
@@ -22,7 +22,7 @@ function Footer() {
           </div>
         </div>
         <div>
-          <h2>Socials</h2>
+          <h2 className="h4">Socials</h2>
 
           <div className="contact_socials_flex">
             <a href="">

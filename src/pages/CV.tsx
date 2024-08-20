@@ -10,6 +10,7 @@ import Contact from "../components/Contact";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { useRef, useState, useEffect } from "react";
+import BurgerMenu from "../components/BurgerMenu";
 
 function CV() {
   const [activeSection, setActiveSection] = useState<string>("");
@@ -59,6 +60,29 @@ function CV() {
 
   return (
     <div>
+      <BurgerMenu
+        scrollToHero={() =>
+          heroRef.current?.scrollIntoView({ behavior: "smooth" })
+        }
+        scrollToAboutMe={() =>
+          aboutMeRef.current?.scrollIntoView({ behavior: "smooth" })
+        }
+        scrollToSkills={() =>
+          skillsRef.current?.scrollIntoView({ behavior: "smooth" })
+        }
+        scrollToExperiences={() =>
+          experiencesRef.current?.scrollIntoView({ behavior: "smooth" })
+        }
+        scrollToHobbies={() =>
+          hobbiesRef.current?.scrollIntoView({ behavior: "smooth" })
+        }
+        scrollToGrades={() =>
+          gradesRef.current?.scrollIntoView({ behavior: "smooth" })
+        }
+        scrollToContact={() =>
+          contactRef.current?.scrollIntoView({ behavior: "smooth" })
+        }
+      />
       <NavBar
         scrollToHero={() =>
           heroRef.current?.scrollIntoView({ behavior: "smooth" })

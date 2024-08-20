@@ -9,9 +9,9 @@ function Hero() {
       <div className={s.hero_grid}>
         <img className={s.hero_img} src={JuliePhoto} alt="" />
         <div>
-          <h2 className={s.h2}>Frontend Developer</h2>
-          <h1 className={s.h1}>Julie Radant</h1>
-          <div className={s.flex_rows}>
+          <h2 className="subtitle">Frontend Developer</h2>
+          <h1 className="display_title">Julie Radant</h1>
+          <div className={s.hero_flex}>
             <div className={s.flex_row}>
               <MdEmail style={{ color: "#514c45" }} />
               <p>julieradant@gmail.com</p>

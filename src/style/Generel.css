@@ -6,18 +6,24 @@
   --secondary: #ebdec9;
   --tertiary: #d0c4b1;
   --quaternary: #98bea0;
-  --h3--font: "Quicksand", sans-serif;
-  --h2-font: "PT Serif", serif;
+  --display-title-font: "Playfair Display", serif;
   --h1-font: "Old Standard TT", serif;
+  --h2-font: "PT Serif", serif;
+  --h3--font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  --h4--font: "Old Standard TT", serif, "Lucida Sans Unicode", Geneva, Verdana,
+    sans-serif;
+  --p-font: "Quicksand", sans-serif;
   --font-color: #514c45;
 }
-
 :root {
-  --base-font-size: 14px; /* Default base font size for small screens */
-  --h1-size: 2.853rem; /* Default h1 size (approx 39.942px) */
-  --h2-size: 2.542rem; /* Default h2 size (approx 35.588px) */
-  --h3-size: 2.257rem; /* Default h3 size (approx 31.598px) */
-  --p-size: 1rem; /* Default paragraph size (approx 14px) */
+  --base-font-size: 12px; /* Adjust base size if needed */
+  --display-title-size: 2.5rem; /* Adjusted for smaller screens */
+  --subtitle-size: 1.3rem; /* Adjusted for smaller screens */
+  --h1-size: 1.8rem; /* Adjusted for smaller screens */
+  --h2-size: 1.6rem; /* Adjusted for smaller screens */
+  --h3-size: 1.2rem; /* Adjusted for smaller screens */
+  --h4-size: 1rem; /* Adjusted for smaller screens */
+  --p-size: 0.9rem; /* Adjusted for smaller screens */
 }
 
 body {
@@ -26,11 +32,25 @@ body {
   padding: 0;
 }
 
+.display_title {
+  font-size: var(--display-title-size);
+  font-family: var(--display-title-font);
+  font-weight: 400;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: var(--subtitle-size);
+  font-family: var(--p-font);
+  font-weight: 400;
+  margin: 0;
+}
 p {
   font-size: 1rem;
   line-height: 1.8rem;
   font: 1em;
-  font-family: var(--h3--font);
+  font-family: var(--p-font);
+  max-width: 32rem;
 }
 
 .h2 {
@@ -44,12 +64,15 @@ p {
   color: var(--font-color);
   font-family: var(--h3--font);
   font-size: var(--h3-size);
-}
-.h3 {
-  font-size: 1.5rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 400;
 }
+
+.h4 {
+  color: var(--font-color);
+  font-family: var(--h4--font);
+  font-size: var(--h4-size);
+}
+
 .skill-boxes-grid h1 {
   justify-self: center;
 }
@@ -136,6 +159,19 @@ h1 {
   padding-bottom: 3rem;
 }
 
+@media (min-width: 500px) {
+  :root {
+    --base-font-size: 14px;
+    --display-title-size: 3.5rem;
+    --subtitle-size: 1.4rem;
+    --h1-size: 2.853rem;
+    --h2-size: 2.542rem;
+    --h3-size: 1.4rem;
+    --h4-size: 1.2rem;
+    --p-size: 1rem;
+  }
+}
+
 @media (min-width: 690px) {
   .skill-boxes-grid {
     display: grid;
@@ -152,25 +188,14 @@ h1 {
 @media (min-width: 1120px) {
   :root {
     --base-font-size: 16px;
+    --display-title-size: 5rem; /* Adjust as needed */
+    --subtitle-size: 1.8rem; /* Adjust as needed */
     --h1-size: 3.169rem; /* 50.704px */
     --h2-size: 2.82rem; /* 45.12px */
-    --h3-size: 2.513rem; /* 40.208px */
+    --h3-size: 1.5rem; /* 40.208px */
+    --h4-size: 1.3rem; /* 20.8px */
   }
 
-  .about-me-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    margin: 0;
-  }
-
-  .about-me-grid > :first-child {
-    background-color: #98bea0;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    margin: 0;
-  }
   .skill-boxes-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -186,14 +211,5 @@ h1 {
   .skill-boxes-grid h1 {
     grid-column: 1/4;
     justify-self: left;
-  }
-}
-
-@media (min-width: 1024px) {
-  :root {
-    --base-font-size: 18px;
-    --h1-size: 3.556rem; /* 64.008px */
-    --h2-size: 3.166rem; /* 56.988px */
-    --h3-size: 2.827rem; /* 50.886px */
   }
 }
