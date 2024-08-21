@@ -44,11 +44,11 @@
   text-align: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .arrow {
     position: absolute;
-    margin-top: 6.5rem;
-    margin-left: -3rem;
+    margin-top: 1rem;
+    margin-left: -2.5rem;
   }
 }
 @media (min-width: 1120px) {

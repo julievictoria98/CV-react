@@ -1,4 +1,4 @@
-import "../style/Generel.css";
+import "../style/generel.css";
 
 import Hero from "../components/Hero";
 import Skills from "../components/skill/Skills";

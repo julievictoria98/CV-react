@@ -1,4 +1,4 @@
-import e from "../../style/Experince.module.css";
+import e from "../../style/experince.module.css";
 import SuitcaseIcon from "../../assets/Icons/suitcase-icon.svg";
 
 interface ExperienceProps {

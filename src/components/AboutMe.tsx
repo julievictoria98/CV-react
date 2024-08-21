@@ -1,5 +1,5 @@
 import { FaLocationDot } from "react-icons/fa6";
-import s from "../style/AboutMe.module.css";
+import s from "../style/aboutMe.module.css";
 
 export function AboutMe() {
   return (

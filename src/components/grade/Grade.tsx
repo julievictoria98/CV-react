@@ -1,4 +1,4 @@
-import "../../style/Grade.css";
+import "../../style/grade.css";
 
 interface GradeProps {
   grade: string;

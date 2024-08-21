@@ -1,5 +1,5 @@
 import Grade from "./Grade";
-import "../../style/Grade.css";
+import "../../style/grade.css";
 
 function Grades() {
   return (

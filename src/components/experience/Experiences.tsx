@@ -1,5 +1,5 @@
 import Experience from "./Experience";
-import e from "../../style/Experince.module.css";
+import e from "../../style/experince.module.css";
 
 function Experiences() {
   return (

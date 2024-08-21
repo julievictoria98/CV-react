@@ -1,4 +1,4 @@
-import s from "../style/NavBar.module.css";
+import s from "../style/navBar.module.css";
 
 interface NavBarProps {
   scrollToHero: () => void;
