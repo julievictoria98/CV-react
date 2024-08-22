@@ -8,20 +8,25 @@
   margin-bottom: 8rem;
 }
 
-.contact-box {
-  background-color: var(--tertiary);
-  border: 10px solid var(--tertiary);
-  border-radius: 10px;
-  text-align: center;
-}
-
-.contact-flex {
+.contacts-flex {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
   padding-left: 2rem;
   padding-right: 2rem;
   gap: 2rem;
+}
+
+.contact-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--tertiary);
+  border: 10px solid var(--tertiary);
+  border-radius: 10px;
+  justify-content: center;
+  min-width: 12rem;
 }
 
 .arrow {
@@ -60,11 +65,6 @@
     margin-top: 8rem;
     margin-bottom: 8rem;
   }
-  .contact-box {
-    background-color: var(--tertiary);
-    border: 10px solid var(--tertiary);
-    border-radius: 10px;
-  }
 
   .contact_flex_column {
     display: grid;
@@ -92,7 +92,7 @@
     align-self: center;
   }
 
-  .contact-flex {
+  .contacts-flex {
     flex-direction: row;
   }
 

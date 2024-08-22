@@ -16,14 +16,14 @@
   --font-color: #443f39;
 }
 :root {
-  --base-font-size: 12px; /* Adjust base size if needed */
-  --display-title-size: 2.5rem; /* Adjusted for smaller screens */
-  --subtitle-size: 1.3rem; /* Adjusted for smaller screens */
-  --h1-size: 1.8rem; /* Adjusted for smaller screens */
-  --h2-size: 1.6rem; /* Adjusted for smaller screens */
-  --h3-size: 1.2rem; /* Adjusted for smaller screens */
-  --h4-size: 1rem; /* Adjusted for smaller screens */
-  --p-size: 0.9rem; /* Adjusted for smaller screens */
+  --base-font-size: 12px;
+  --display-title-size: 2.5rem;
+  --subtitle-size: 1rem;
+  --h1-size: 1.8rem;
+  --h2-size: 1.6rem;
+  --h3-size: 1.2rem;
+  --h4-size: 1rem;
+  --p-size: 0.8rem;
 }
 
 body {
@@ -46,9 +46,8 @@ body {
   margin: 0;
 }
 p {
-  font-size: 1rem;
+  font-size: var(--p-size);
   line-height: 1.8rem;
-  font: 1em;
   font-family: var(--p-font);
   max-width: 32rem;
 }

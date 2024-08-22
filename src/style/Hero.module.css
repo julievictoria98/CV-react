@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 0rem;
   grid-column: 2;
 }
 
@@ -57,10 +57,10 @@
   .hero_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 10rem;
-    padding-right: 15rem;
+
     margin-top: 1rem;
   }
+
   .hero_img {
     width: 22rem;
   }
@@ -75,8 +75,18 @@
 @media (min-width: 1000px) {
   .hero_flex {
     flex-direction: row;
+    gap: 2rem;
   }
   .hero_img {
     width: 25rem;
+  }
+}
+@media (min-width: 1120px) {
+}
+
+@media (min-width: 1250px) {
+  .hero_grid {
+    padding-left: 10rem;
+    padding-right: 18rem;
   }
 }
