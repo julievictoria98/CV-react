@@ -16,10 +16,7 @@ function Hobbies() {
             HobbyName="Reading"
             HobbyIlluAlt="Book Icon"
             HobbyIllu={BookIcon}
-            HoverText="I enjoy reading as a break from screens, with psychological thrillers being my favorite choice.
-
-
-"
+            HoverText="I enjoy reading as a break from screens, with psychological thrillers being my favorite choice."
           />
           <Hobby
             HobbyName="Video Games"

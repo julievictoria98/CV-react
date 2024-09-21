@@ -15,13 +15,14 @@
   align-items: center;
 }
 .about_me_grid > :first-child {
-  background-color: #98bea0;
+  background-color: #fccaa4;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin: 0;
-  /* box-shadow: 20px 20px 0px rgb(26, 123, 90);; */
+  border: 2px solid black;
+  box-shadow: 20px 20px 0px #ecae7d;
 }
 
 @media (min-width: 800px) {

@@ -1,19 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+
 
 :root {
   --primarycolor: #eee4d6;
   --secondary: #ebdec9;
   --tertiary: #d0c4b1;
   --quaternary: #98bea0;
-  --display-title-font: "Playfair Display", serif;
-  --h1-font: "Old Standard TT", serif;
+  --display-title-font:  "Bebas Neue", sans-serif;
+  /* --h1-font: "Old Standard TT", serif; */
+  --h1-font: "Bebas Neue", sans-serif;
   --h2-font: "PT Serif", serif;
   --h3--font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   --h4--font: "Old Standard TT", serif, "Lucida Sans Unicode", Geneva, Verdana,
     sans-serif;
   --p-font: "Quicksand", sans-serif;
-  --font-color: #443f39;
+  --font-color: #242424;
 }
 :root {
   --base-font-size: 12px;
@@ -27,7 +32,7 @@
 }
 
 body {
-  background-color: var(--primarycolor);
+background-color: rgb(238, 238, 238);
   margin: 0;
   padding: 0;
 }
@@ -37,6 +42,8 @@ body {
   font-family: var(--display-title-font);
   font-weight: 400;
   margin: 0;
+  text-shadow: 2px 5px 1px rgb(245, 133, 4);
+  --font-color:rgb(23, 5, 111);
 }
 
 .subtitle {
@@ -53,10 +60,11 @@ p {
 }
 
 .h2 {
-  font-size: var(--h2-size);
-  font-family: var(--h2-font);
+  font-size: 2.5rem;
+  font-family: "Rubik Mono One", monospace;
   font-weight: 400;
   margin: 0.2rem;
+  color: var(--font-color);
 }
 
 .h3 {
@@ -97,7 +105,7 @@ h2,
 h1 {
   font-family: var(--h1-font);
 }
-@font-face {
+/* @font-face {
   font-family: "jostitalic";
   src: url("jost-italic-variablefont_wght-webfont.woff2") format("woff2"),
     url("jost-italic-variablefont_wght-webfont.woff") format("woff");
@@ -111,7 +119,14 @@ h1 {
     url("jost-variablefont_wght-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+} */
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
 
 .skill-boxes-grid {
   display: grid;

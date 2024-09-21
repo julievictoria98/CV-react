@@ -15,17 +15,19 @@
 
   .navbar button {
     background-color: transparent;
-    color: var(--primarycolor);
+    color: black;
     font-size: 1.3rem;
     cursor: pointer;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    /* border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px; */
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 0.2rem;
     padding-top: 0.2rem;
     border: none;
-    background-color: #5b5555;
+    background-color: #fb770a;
+    border: 2px solid black;
+    box-shadow:  -5px 5px 0px rgb(55, 53, 53);
     transition: transform 0.3s, width 0.3s;
   }
 
