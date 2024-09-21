@@ -1,8 +1,4 @@
-interface JSInfoProps {
-  skillText: string;
-}
-
-function SkillInfo({ skillText }: JSInfoProps) {
+function SkillInfo({ skillText }: {skillText:String}) {
   return (
     <div>
       <p>{skillText}</p>
@@ -11,3 +7,4 @@ function SkillInfo({ skillText }: JSInfoProps) {
 }
 
 export default SkillInfo;
+

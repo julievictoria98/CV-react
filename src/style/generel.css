@@ -72,9 +72,6 @@ p {
   font-size: var(--h4-size);
 }
 
-.skill-boxes-grid h1 {
-  justify-self: center;
-}
 
 .flex-row {
   display: flex;
@@ -82,22 +79,6 @@ p {
   justify-content: space-between;
 }
 
-.skill-box {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--tertiary);
-  padding: 1rem;
-  border-radius: 1rem;
-  justify-content: space-between;
-  width: 15rem;
-}
-.skill-box h2 {
-  color: var(--font-color);
-}
-
-.show-skill-btn {
-  cursor: pointer;
-}
 
 .icons {
   font-size: 2em; /* Ændrer størrelsen på ikonet */

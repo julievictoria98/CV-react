@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import SkillInfo from "./SkillInfo";
+import s from "../../style/skill.module.css";
 
 interface SkillProps {
   skillName: string;
@@ -10,11 +11,11 @@ interface SkillProps {
 function Skill({ skillName, skillText }: SkillProps) {
   const [showSkillInfo, setShowSkillInfo] = useState(false);
   return (
-    <div className="skill-box">
-      <div className="flex-row">
+    <div className={s.skill_box}>
+      <div className={s.flex_row}>
         <h2 className="h3">{skillName}</h2>
         <div
-          className="show-skill-btn"
+          className={s.show_skill_btn}
           onClick={() => setShowSkillInfo(!showSkillInfo)}
         >
           {showSkillInfo ? (

@@ -1,10 +1,11 @@
 import Skill from "./Skill";
+import s from "../../style/skill.module.css";
 
 function Skills() {
   return (
     <>
       <div>
-        <div className="skill-boxes-grid">
+        <div className={s.skill_boxes_grid}>
           <h1 className="h2">Skills</h1>
           <div>
             <Skill
