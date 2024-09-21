@@ -1,0 +1,135 @@
+.hobby_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  row-gap: 3rem;
+  /* align-items: baseline; */
+  margin-top: 2.5rem;
+}
+
+/* .hobby img {
+  width: 6.2rem;
+  margin-bottom: 1rem;
+} */
+
+/* .hover_text {
+  max-width: 14rem;
+  margin-bottom: 1rem;
+} */
+
+.hobby_flex {
+  display: flex;
+  flex-direction: column;
+}
+/* 
+.hobby_flex :nth-child(2) {
+  align-self: center;
+  order: -3;
+} */
+
+.hobbies {
+  text-align: center;
+}
+
+/* .hobby_name {
+  display: none;
+} */
+
+@media (min-width: 690px) {
+  .hobby_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hobby img {
+    width: 7rem;
+  }
+  .hobby {
+    text-align: center;
+    width: 12rem;
+    height: 12rem;
+    align-content: flex-end;
+  }
+  .hobby_name {
+    display: block;
+  }
+
+  /* .hobby:hover {
+    background-color: rgb(34, 34, 144);
+    border: 2px solid black;
+    transition: 0.4s;
+    cursor: pointer;
+     box-shadow: 12px 10px 0px rgb(55, 53, 53)  
+     
+    } */
+
+  /* .hobby:hover img {
+    opacity: 0;
+  }
+
+  .hobby:hover h1 {
+    opacity: 0;
+  } */
+
+  /* .hobby:hover .hover_text {
+    display: block;
+    position: absolute;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  } */
+
+  /* .hover_container {
+    position: relative;
+  }
+  .hover_text {
+    display: none;
+    position: absolute;
+  } */
+  .hobby img {
+    width: 9rem;
+  }
+  /* .hobby_flex :nth-child(2) {
+    align-self: center;
+    order: 0;
+  } */
+}
+
+@media (min-width: 768px) {
+  .hobbies {
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+  }
+
+  .hobby_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    row-gap: 5rem;
+    justify-items: center;
+    align-items: baseline;
+    margin-top: 2rem;
+  }
+  .hobby-grid h1 {
+    grid-column: 1/4;
+    justify-self: left;
+  }
+}
+
+@media (min-width: 1120px) {
+  .hobby_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    row-gap: 5rem;
+    justify-items: left;
+    align-items: baseline;
+    margin-top: 2rem;
+  }
+  .hobbies {
+    margin-left: 8rem;
+  }
+  .hobbies {
+    text-align: left;
+  }
+}
