@@ -1,4 +1,4 @@
-import JuliePhoto from "../imgs/cv-img-shape1.png";
+import JuliePhoto from "../imgs/cv-img-julie.jpg";
 import s from "../style/hero.module.css";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";

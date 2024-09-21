@@ -1,3 +1,6 @@
+body{
+  background-image: url(../imgs/dotted-pattern.png);
+}
 .grade-image-container {
   background-image: url(../assets/Icons/doodle-ring.svg);
   background-size: cover;

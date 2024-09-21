@@ -36,3 +36,5 @@ function Skill({ skillName, skillText }: SkillProps) {
 }
 
 export default Skill;
+
+
