@@ -1,0 +1,6 @@
+.folder{
+    background-image: url("../imgs/folder_icon.svg");
+    background-size: cover;
+    width: 20rem;
+    height: 17rem;
+}

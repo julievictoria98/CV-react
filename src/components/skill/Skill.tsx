@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp, IoMdArrowDropdown, IoMdArrowDropup  } from "react-icons/io";
-import SkillInfo from "./SkillInfo";
+// import SkillInfo from "./SkillInfo";
 import s from "../../style/skill.module.css";
 
 interface SkillProps {
@@ -11,12 +11,11 @@ interface SkillProps {
 function Skill({ skillName, skillText }: SkillProps) {
   const [showSkillInfo, setShowSkillInfo] = useState(false);
   return (
-    <div className={s.skill_box}>
-      <div className={s.flex_row}>
+<div className={s.skill_box}>
+      <div className={s.flex_row} onClick={() => setShowSkillInfo(!showSkillInfo)}>
         <h2 className="h3">{skillName}</h2>
         <div
           className={s.show_skill_btn}
-          onClick={() => setShowSkillInfo(!showSkillInfo)}
         >
           {showSkillInfo ? (
             <IoMdArrowDropdown className="icons" />
@@ -25,12 +24,20 @@ function Skill({ skillName, skillText }: SkillProps) {
           )}
         </div>
       </div>
+      <div>
+        <p className={`${s.hidden} ${showSkillInfo ? `${s.open} ${s.shown}` : ""}`}>
+          {skillText}
+        </p>    
+      </div>
+      {/* <div>
+          <SkillInfo skillText={skillText} />
+        </div> */}
 
-      {showSkillInfo && (
+      {/* {showSkillInfo && (
         <div>
           <SkillInfo skillText={skillText} />
         </div>
-      )}
+      )} */}
     </div>
   );
 }

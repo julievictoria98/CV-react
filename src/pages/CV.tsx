@@ -11,6 +11,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { useRef, useState, useEffect } from "react";
 import BurgerMenu from "../components/BurgerMenu";
+import Folder from "../components/work/Folder";
 
 function CV() {
   const [activeSection, setActiveSection] = useState<string>("");
@@ -128,6 +129,7 @@ function CV() {
       <div ref={contactRef}>
         <Contact />
       </div>
+      <Folder workName="game" workLink="hej"/>
       <Footer />
     </div>
   );

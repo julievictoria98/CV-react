@@ -22,7 +22,8 @@ img {
   padding-bottom: 3rem;
   padding-top: 3rem;
   background-color: var(--tertiary);
-  background-image: url("../imgs/checkered-pattern.png");
+  background-image: url("../imgs/checkered-brown.pattern.png");
+  ;
 }
 h1 {
   font-size: 0.5rem;
@@ -34,6 +35,20 @@ h1 {
   margin: 0;
   padding: 0;
 }
+
+.scale{
+  animation: scale 1s ease;
+}
+
+@keyframes scale{
+  0%{
+    transform: scale(0) rotate(0deg);
+  }
+  100%{
+    transform: scale(1) rotate(360deg);
+  }
+}
+
 
 .experince_item h1,
 p {
