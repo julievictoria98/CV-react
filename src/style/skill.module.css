@@ -45,6 +45,7 @@
   overflow: hidden;
 }
 
+
 .open {
   display: block; 
   animation-name: animate_open;
@@ -66,6 +67,15 @@
   opacity: 1;
   max-height: 1000px;
 }
+
+.skill_box:hover{
+  border: 2px solid black;
+  box-shadow: 0.5px 5px 1px;
+  transition: 0.15s;
+  background-color: #FB7DA8;
+}
+
+
 
 @media (min-width: 690px) {
   .skill_boxes_grid {
