@@ -1,11 +1,12 @@
 .footer {
-  border-top: 2px solid var(--quaternary);
+  background-color: #f489b0;
+  border: 2px solid black;
   margin-top: 6rem;
-  margin-bottom: 2rem;
   padding-top: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1.5rem;
+
 
   display: flex;
   flex-direction: row;

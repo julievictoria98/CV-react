@@ -90,6 +90,7 @@ p {
   line-height: 1.8rem;
   font-family: var(--p-font);
   max-width: 32rem;
+  font-weight: 450;
 }
 
 .h2 {
@@ -109,7 +110,7 @@ p {
 
 .h4 {
   color: var(--font-color);
-  font-family: var(--h4--font);
+  font-family: "Rubik Mono One", monospace;
   font-size: var(--h4-size);
 }
 

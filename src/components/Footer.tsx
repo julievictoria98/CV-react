@@ -3,7 +3,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import logo from "..//assets/Icons/logo.svg";
+import logo from "../imgs/logo.svg";
 
 function Footer() {
   return (
@@ -13,11 +13,11 @@ function Footer() {
         <div>
           <h2 className="h4">Contact</h2>
           <div className="contact_socials_flex">
-            <FaPhoneAlt style={{ color: "#514c45" }} />
+            <FaPhoneAlt style={{ color: "black" }} />
             <p>+45 50 52 34 91</p>
           </div>
           <div className="contact_socials_flex">
-            <MdEmail style={{ color: "#514c45" }} />
+            <MdEmail style={{ color: "black" }} />
             <p>julieradant@gmail.com</p>
           </div>
         </div>
@@ -28,15 +28,14 @@ function Footer() {
             target="blank"
           >
             <div className="contact_socials_flex">
-              <FaLinkedin style={{ color: "#443f39" }} />
+              <FaLinkedin style={{ color: "black" }} />
 
               <p>LinkedIn</p>
             </div>
           </a>
           <a href="https://github.com/julievictoria98" target="blank">
             <div className="contact_socials_flex">
-              <FaGithubSquare style={{ color: "#443f39" }} />
-
+              <FaGithubSquare style={{ color: "black" }} />
               <p>GitHub</p>
             </div>
           </a>
