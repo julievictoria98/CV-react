@@ -3,8 +3,7 @@ import s from "../style/aboutMe.module.css";
 
 export function AboutMe() {
   return (
-    <div className={s.about_me_grid}>
-      <div>
+    <div className={s.about_me_container }>
         <h1 className="h2">About me</h1>
         <div className={s.about_me_flex}>
           <p>
@@ -38,7 +37,6 @@ export function AboutMe() {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 }

@@ -4,9 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-
-
-
 :root {
   --primarycolor: #eee4d6;
   --secondary: #ebdec9;
@@ -21,6 +18,10 @@
     sans-serif;
   --p-font: "Quicksand", sans-serif;
   --font-color: #242424;
+}
+
+:root{
+--extra-padding: clamp(1rem, 10vw, 15rem); 
 }
 :root {
   --base-font-size: 12px;
@@ -37,6 +38,37 @@ body {
 background-color: rgb(238, 238, 238);
   margin: 0;
   padding: 0;
+}
+
+
+  main > div{
+
+   --gap: clamp(1rem, 6vw, 3rem);
+    --full: minmax(var(--gap), 1fr);
+    --content: minmax(calc(var(--gap) * 2), 65rem);
+
+    display: grid;
+    grid-template-columns:
+      [full-start] var(--full)
+      [content-start] var(--content)
+      [content-end]
+      var(--full) [full-end];
+
+      & > * {
+      grid-column: content;
+
+       
+    } 
+    .full{
+      grid-column: full;
+
+     
+    }
+
+    .pop_out {
+      grid-column: full/ content-end;
+    }
+
 }
 
 .display_title {
@@ -90,9 +122,9 @@ p {
 
 
 .icons {
-  font-size: 2em; /* Ændrer størrelsen på ikonet */
-  width: 1.2em; /* Sætter bredden på ikonet */
-  height: 2em; /* Sætter højden på ikonet */
+  font-size: 2em; 
+  width: 1.2em; 
+  height: 2em; 
   color: var(--font-color);
 }
 
@@ -106,22 +138,10 @@ h2,
 h1 {
   font-family: var(--h1-font);
 }
-/* @font-face {
-  font-family: "jostitalic";
-  src: url("jost-italic-variablefont_wght-webfont.woff2") format("woff2"),
-    url("jost-italic-variablefont_wght-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+
+a{
+  cursor: pointer;
 }
-
-@font-face {
-  font-family: "jostregular";
-  src: url("jost-variablefont_wght-webfont.woff2") format("woff2"),
-    url("jost-variablefont_wght-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-} */
-
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -184,12 +204,12 @@ h1 {
 @media (min-width: 1120px) {
   :root {
     --base-font-size: 16px;
-    --display-title-size: 4.5rem; /* Adjust as needed */
-    --subtitle-size: 1.8rem; /* Adjust as needed */
-    --h1-size: 3.169rem; /* 50.704px */
-    --h2-size: 2.82rem; /* 45.12px */
-    --h3-size: 1.5rem; /* 40.208px */
-    --h4-size: 1.3rem; /* 20.8px */
+    --display-title-size: 4.5rem; 
+    --subtitle-size: 1.8rem; 
+    --h1-size: 3.169rem; 
+    --h2-size: 2.82rem; 
+    --h3-size: 1.5rem; 
+    --h4-size: 1.3rem;
   }
 
   .skill-boxes-grid {

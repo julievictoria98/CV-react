@@ -1,13 +1,13 @@
-import JuliePhoto from "../imgs/julie-new-img.jpg";
 import s from "../style/hero.module.css";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
+import HeroImg from "./HeroImg";
 
 function Hero() {
   return (
-    <header>
-      <div className={s.hero_grid}>
-        <img className={s.hero_img} src={JuliePhoto} alt="" />
+    <header className="full">
+      <div className={`${s.hero_grid} full`}>
+        <HeroImg/>
         <div>
           <h2 className="subtitle">Frontend Developer</h2>
           <h1 className="display_title">Julie Radant</h1>

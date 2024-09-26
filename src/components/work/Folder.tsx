@@ -2,17 +2,17 @@
 import s from '../../style/work.module.css';
 
 interface FolderProps {
-workName: string;
+folderName: string;
 workLink: string;
 }
 
-function Folder({ workName, workLink }: FolderProps) {
+function Folder({ folderName, workLink }: FolderProps) {
   return (
-    <a href={workLink}> 
+  <a href={workLink}> 
     <div className={s.folder}>
-      <h1>{workName}</h1>
+      <h1 className={s.folder_name}>{folderName}</h1>
     </div>
-    </a>
+  </a>
   );
 }
 export default Folder;

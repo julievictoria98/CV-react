@@ -14,7 +14,7 @@
   flex-direction: row;
   align-items: center;
 }
-.about_me_grid > :first-child {
+.about_me_container{
   background-color: #fccaa4;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -23,6 +23,8 @@
   margin: 0;
   border: 2px solid black;
   box-shadow: 20px 20px 0px #ecae7d;
+  grid-column: full;
+  max-width: 55rem;
 }
 
 @media (min-width: 800px) {
@@ -40,9 +42,9 @@
 }
 
 @media (min-width: 1120px) {
-  .about_me_grid {
+  /* .about_me_grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 0;
-  }
+  } */
 }

@@ -12,6 +12,7 @@ import Footer from "../components/Footer";
 import { useRef, useState, useEffect } from "react";
 import BurgerMenu from "../components/BurgerMenu";
 import Folder from "../components/work/Folder";
+import Folders from "../components/work/Folders";
 
 function CV() {
   const [activeSection, setActiveSection] = useState<string>("");
@@ -60,7 +61,7 @@ function CV() {
   }, []);
 
   return (
-    <div>
+    <main>
       <BurgerMenu
         scrollToHero={() =>
           heroRef.current?.scrollIntoView({ behavior: "smooth" })
@@ -108,10 +109,10 @@ function CV() {
         }
         activeSection={activeSection}
       />
-      <div ref={heroRef}>
+      <div className="full" ref={heroRef}>
         <Hero />
       </div>
-      <div ref={aboutMeRef}>
+      <div className="pop_out " ref={aboutMeRef}>
         <AboutMe />
       </div>
       <div ref={skillsRef}>
@@ -120,18 +121,17 @@ function CV() {
       <div ref={gradesRef}>
         <Grades />
       </div>
-      <div ref={experiencesRef}>
+      <div className="main_grid " ref={experiencesRef}>
         <Experiences />
       </div>
       <div ref={hobbiesRef}>
-        <Hobbies />
+        <Folders/>
       </div>
       <div ref={contactRef}>
         <Contact />
       </div>
-      <Folder workName="game" workLink="hej"/>
       <Footer />
-    </div>
+    </main>
   );
 }
 

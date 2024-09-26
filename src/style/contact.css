@@ -1,65 +1,53 @@
 .contact {
   display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-left: var(--extra-padding);
+  margin-right: var(--extra-padding);
   justify-content: center;
   justify-items: center;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+   background-color: #fccaa4;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border: 2px solid black;
+  box-shadow: 20px 20px 0px #ecae7d;
+  text-align: center;
+  position: relative;
+  animation-name: upDown;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out; 
+  animation-iteration-count: infinite;
 }
+
+
+.contacts-flex::before{
+  position: absolute;
+  content: "";
+  background-image: url(../imgs/clip1.png);
+  height: 6.8rem;
+  width: 6.7rem;
+  scale: 0.8;
+  z-index: 2;
+  top:-2rem;
+  left: -2rem;
+}
+
 
 .contacts-flex {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   padding-left: 2rem;
   padding-right: 2rem;
   gap: 2rem;
 }
-
-.contact-flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: var(--tertiary);
-  border: 10px solid var(--tertiary);
-  border-radius: 10px;
-  justify-content: center;
-  min-width: 12rem;
-}
-
-.arrow {
-  position: absolute;
-  margin-top: 4rem;
-  margin-left: -3rem;
-}
-
-.contact_arrow {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  position: relative;
-  padding-left: 6rem;
-  margin-bottom: 2rem;
-}
-
 .contact_header {
   width: 80%;
   text-align: center;
 }
 
-@media (max-width: 450px) {
-  .arrow {
-    position: absolute;
-    margin-top: 1rem;
-    margin-left: -2.5rem;
-  }
-}
 @media (min-width: 1120px) {
   .contact {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    
     justify-content: center;
     justify-items: center;
     margin-top: 8rem;
@@ -100,11 +88,16 @@
     width: 100%;
   }
 
-  .contact_arrow {
-    padding-left: 0rem;
-  }
+}
 
-  .arrow {
-    margin-left: 0rem;
+@keyframes upDown{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-1.5rem);
+  }
+  100%{
+    transform: translateY(0);
   }
 }

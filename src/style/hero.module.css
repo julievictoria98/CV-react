@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap");
 
 .hero_grid {
+  padding-top: 5rem;
   display: grid;
   grid-template-columns: 1fr;
-  background-image: url("../imgs/dotted-pattern.png");
+  background-image: url(../imgs/checkered-pattern.png);
 }
 .hero_grid:nth-child(2) {
-  justify-self: start; /* Aligns item to the left within its grid cell */
+  justify-self: start; 
   align-self: start;
 }
 
@@ -35,11 +36,7 @@
   grid-column: 2;
 }
 
-/* .hero_flex * {
-  background-color: var(--tertiary);
-  border: 5px solid var(--tertiary);
-  border-radius: 10px;
-} */
+
 .hero_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -47,37 +44,78 @@
   align-items: center;
   padding-bottom: 3rem;
   /* margin-top: 3rem; */
-  margin-bottom: 5rem;
+  padding-bottom: 10rem;
+  margin-bottom: 1.5rem;
 }
-.hero_img {
-  width: 10rem;
-  /* border-radius: 10px; */
+.resume_photo {
+   width: 10rem; 
   position: relative;
-  z-index: 1;
-  box-shadow: 10px 5px 1px #FB7DA8;
-  border: 2.5px solid black;
+  /* border: 20px solid rgb(220, 220, 220); */
+  
+  
 }
 
-.hero_img::before{
-  content: "";
-  background-image: url("../imgs/clip1.png");
-  display: block;
-  width: 10rem;
-  height: 10rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  border-radius: 10px;
-  z-index: 2;
+.img_container{
+  position: relative;
+  z-index: 1;
 }
+
+/* .img_container::after{
+  content: "";
+    background-image: url(../imgs/star-icons.svg);
+    height: 4rem;
+    width: 5rem;
+     display: inline-block;
+
+
+} */
+
+.img_container::before{
+  position: absolute;
+  content: "";
+  background-image: url(../imgs/clip1.png);
+  height: 6.8rem;
+  width: 6.7rem;
+  scale: 0.9;
+  display: inline-block;
+  z-index: 2;
+  top:-2rem;
+  left: -2rem;
+}
+
+.rotate{
+ animation-name: rotate;
+  animation-duration: 1s;
+  animation-timing-function: linear; 
+
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(-10deg) translateY(5rem);
+  }
+  
+
+  33.3333%{
+    transform: rotate(0deg);
+  }
+
+  66.6666%{
+    transform: rotate(10deg);
+  }
+
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
 
 @media (min-width: 500px) {
   .hero_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .hero_img {
+  .resume_photo {
     width: 15rem;
   }
   .h1 {
@@ -92,7 +130,7 @@
     /* margin-top: 1rem; */
   }
 
-  .hero_img {
+  .resume_photo {
     width: 22rem;
   }
 
@@ -108,7 +146,7 @@
     flex-direction: row;
     gap: 2rem;
   }
-  .hero_img {
+  .resume_photo {
     width: 20rem;
   }
 }

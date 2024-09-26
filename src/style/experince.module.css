@@ -1,6 +1,19 @@
 .experience {
   margin-top: 4;
   margin-bottom: 4rem;
+  background-image: url("../imgs/checkered-brown.pattern.png");
+    display: grid;
+    grid-template-columns:
+      [full-start] var(--full)
+      [content-start] var(--content) [content-end]
+      var(--full) [full-end];
+
+      & > * {
+      grid-column: content;
+      
+    } 
+    
+  
 }
 .flexrow {
   display: flex;
@@ -17,13 +30,10 @@ img {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+ 
   padding-bottom: 3rem;
   padding-top: 3rem;
-  background-color: var(--tertiary);
-  background-image: url("../imgs/checkered-brown.pattern.png");
-  ;
+  
 }
 h1 {
   font-size: 0.5rem;
@@ -63,7 +73,6 @@ p {
 
     padding-bottom: 3rem;
     padding-top: 3rem;
-    background-color: var(--tertiary);
   }
   img {
     width: 5rem;
@@ -75,11 +84,8 @@ p {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding-left: 8rem;
-    padding-right: 16rem;
     padding-bottom: 3rem;
     padding-top: 3rem;
-    background-color: var(--tertiary);
   }
   img {
     width: 5rem;

@@ -6,8 +6,8 @@
   row-gap: 3rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
 }
 
 .skill_boxes_grid h1 {
@@ -72,7 +72,6 @@
   border: 2px solid black;
   box-shadow: 0.5px 5px 1px;
   transition: 0.15s;
-  background-color: #FB7DA8;
 }
 
 
@@ -99,8 +98,8 @@
     row-gap: 3rem;
     margin-top: 8rem;
     margin-bottom: 8rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    /* padding-left: 8rem;
+    padding-right: 8rem; */
   }
 
   .skill_boxes_grid h1 {

@@ -1,6 +1,57 @@
 .folder{
     background-image: url("../imgs/folder_icon.svg");
-    background-size: cover;
-    width: 20rem;
-    height: 17rem;
+    padding: 2rem;    
+    background-repeat: no-repeat;
+    padding-top: 2rem;
+    padding-bottom: 2rem; 
+    background-size:contain; 
+    align-items: center;
+   
+} 
+
+.folder:hover{
+    animation-name: rotateSideToSide;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+     animation-iteration-count: infinite;
+   
 }
+
+@keyframes rotateSideToSide{
+    0%{
+        transform: rotate(0deg);
+    }
+   25%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+
+.folders_grid{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    gap: calc(13rem - 2vw); 
+    row-gap: 3rem;
+    justify-content: center;
+    align-content: baseline;
+    padding-inline: calc(1.5rem + 10vw); 
+}
+
+ .folder_name {
+    width: 5rem;
+    font-size: 1rem;
+    font-family: var(--p-font);
+} 
