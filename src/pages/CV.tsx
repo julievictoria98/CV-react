@@ -13,6 +13,7 @@ import { useRef, useState, useEffect } from "react";
 import BurgerMenu from "../components/BurgerMenu";
 import Folder from "../components/work/Folder";
 import Folders from "../components/work/Folders";
+import JobDescriptions from "../components/jobDescription/JobDescriptions";
 
 function CV() {
   const [activeSection, setActiveSection] = useState<string>("");
@@ -122,7 +123,7 @@ function CV() {
         <Grades />
       </div>
       <div className="main_grid " ref={experiencesRef}>
-        <Experiences />
+        <JobDescriptions/>
       </div>
       <div ref={hobbiesRef}>
         <Folders/>

@@ -1,0 +1,66 @@
+.job{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f489b0 ;
+    box-shadow: 10px 10px 0.1px #FCAECB;
+    width: 12rem;
+    height: 12rem;
+    text-align: center;
+    border: 2px solid black;
+    padding-inline: 1rem;
+    padding-top: 2rem;  
+}
+
+.job_flex{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: calc(1rem + 8vw); 
+    row-gap: 3.5rem; 
+}
+
+.job_container{
+    margin-bottom: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-image: url("../imgs/checkered-brown.pattern.png");
+    display: grid;
+    grid-template-columns:
+      [full-start] var(--full)
+      [content-start] var(--content) [content-end]
+      var(--full) [full-end];
+
+      & > * {
+      grid-column: content;
+      
+    } 
+}
+
+.jobname{
+    font-size: 1.2rem;
+    font-family: var(--p-font);
+}
+
+
+@media (max-width: 890px){
+    .job_flex{
+        justify-content: center;
+        column-gap: 2rem;
+        column-gap: calc(5rem + 4vw); 
+
+    }
+      .job_container{
+        justify-items: center;
+
+
+    }
+} 
+
+@media (max-width: 1000px){
+    .job_flex{
+        column-gap: calc(1rem + 4vw); 
+
+    }
+}
+
