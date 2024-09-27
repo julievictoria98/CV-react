@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
+import {RxCross2 } from "react-icons/rx";
+import { MdMenu } from "react-icons/md";
+
+
 import s from "../style/burgerMenu.module.css";
 
 interface BurgerMenuProps {
@@ -30,12 +33,16 @@ function BurgerMenu({
   };
 
   return (
-    <div className={s.burgermenu}>
+    <div className={s.burgermenu} style={{ backgroundColor: showMenu ? "#fb770a" : "transparent",
+      border: showMenu ? "2.5px solid black" : "none",
+       boxShadow: showMenu ? "-5px 6px 0.1px rgba(0, 0, 0, 1)" : "none"
+      
+     }} >
       <div onClick={() => setShowMenu(!showMenu)}>
         {showMenu ? (
-          <RxCross2 className={s.icons} />
+          <RxCross2 style={{ color: "black" }} className={s.icons} />
         ) : (
-          <RxHamburgerMenu className={s.icons} />
+          <MdMenu  style={{ color: "black" }}  className={s.icons} />
         )}
       </div>
 

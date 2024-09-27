@@ -40,14 +40,13 @@
 .folders_grid{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
     text-align: center;
-    gap: calc(13rem - 2vw); 
+    gap: calc(13rem - 20vw); 
     row-gap: 3rem;
-    justify-content: center;
+    justify-content: space-between;
     align-content: baseline;
-    padding-inline: calc(1.5rem + 10vw); 
+    padding-inline: 5rem; 
+    margin-top: 2rem;
 }
 
  .folder_name {
@@ -55,3 +54,10 @@
     font-size: 1rem;
     font-family: var(--p-font);
 } 
+
+@media (max-width: 800px) {
+  .folders_grid{
+    justify-content: center;
+    padding-inline: 0.5rem;
+  }
+}
