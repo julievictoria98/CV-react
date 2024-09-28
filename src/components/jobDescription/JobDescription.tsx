@@ -1,8 +1,12 @@
 import s from '../../style/jobDescription.module.css';
 import { MdScreenshotMonitor } from "react-icons/md";
-import { BiSolidComponent } from "react-icons/bi";
+import { SiAstro } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { HiLightBulb } from "react-icons/hi";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaReact } from "react-icons/fa";
+
+
 
 
 
@@ -16,8 +20,10 @@ interface JobDescriptionProps
     const iconsArray = [
     { icon: <MdScreenshotMonitor  style={{ color: "black"}} size={70}  />, alt: "Javascript Icon" },
     { icon: <IoLogoJavascript  style={{ color: "black" }} size={70}  />, alt: "Javascript Icon" },
-    { icon: <BiSolidComponent  style={{ color: "black" }} size={70}  />, alt: "Component Icon" },
-    { icon: <HiLightBulb  style={{ color: "black" }} size={70}  />, alt: "Component Icon" },
+    { icon: <FaReact  style={{ color: "black" }} size={60}  />, alt: "React Icon" },
+    { icon: <SiAstro  style={{ color: "black" }} size={60}  />, alt: "Astro Icon" },
+    { icon: <HiLightBulb  style={{ color: "black" }} size={70}  />, alt: "Lightbulb Icon" },
+    { icon: <RiTailwindCssFill  style={{ color: "black" }} size={70}  />, alt: "Tailwind Icon" },
 
 ];
 

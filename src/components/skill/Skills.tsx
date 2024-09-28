@@ -16,12 +16,7 @@ function Skills() {
           <div>
             <Skill
               skillName="JavaScript"
-              skillText="
-During my studies I've been learning the theory behind JavaScript, and I have a solid grasp of key concepts like: variable, as well as understanding different data types I'm also familiar with using various operators and writing conditional statements like if, else, and switch.
-In the browser, I've practiced DOM manipulation by selecting elements with methods like getElementById and querySelector, and modifying them with methods like appendChild and createElement. I can also handle common events using addEventListener.
-
-Additionally, I have knowledge of array methods such as .map(), .filter(), .reduce(), and .forEach(). 
-"
+              skillText="During my studies I've been learning the theory behind JavaScript, and I have a solid grasp of key concepts like: variable, as well as understanding different data types I'm also familiar with using various operators and writing conditional statements like if, else, and switch.In the browser, I've practiced DOM manipulation by selecting elements with methods like getElementById and querySelector, and modifying them with methods like appendChild and createElement. I can also handle common events using addEventListener.Additionally, I have knowledge of array methods such as .map(), .filter(), .reduce(), and .forEach()."
             />
           </div>
           <div>
