@@ -11,10 +11,14 @@
     gap:0.5rem;
     width: 200px;
     justify-content: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
 }
 
 .social_text{
     font-size: calc(0.8rem + 0.2vw);
+    line-height: 0rem;
+
     
 }
 
