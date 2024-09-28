@@ -23,7 +23,7 @@ function SocialsBtn({ socialIconIndex, socialLink, socialText }: SocialsBtnProps
                     <span aria-label={selectedIcon.alt}>
                         {selectedIcon.icon} 
                     </span>
-                    <p>{socialText}</p>
+                    <p className={s.social_text}>{socialText}</p>
                 </div>
             </a>
        

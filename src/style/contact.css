@@ -35,7 +35,7 @@
 
 .contacts-flex {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding-left: 2rem;
   padding-right: 2rem;
   gap: 2rem;
@@ -45,9 +45,24 @@
   text-align: center;
 }
 
+@media (max-width: 750px) {
+
+  .contacts-flex {
+    flex-direction: column;
+      justify-content: center; /* Vertical centering */
+    align-items: center;    /* Horizontal centering */
+    text-align: center;  
+  }
+
+  .contact {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+ 
+}
+
 @media (min-width: 1120px) {
   .contact {
-    
     justify-content: center;
     justify-items: center;
     margin-top: 8rem;

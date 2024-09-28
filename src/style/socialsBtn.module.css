@@ -13,6 +13,11 @@
     justify-content: center;
 }
 
+.social_text{
+    font-size: calc(0.8rem + 0.2vw);
+    
+}
+
 
 .socials_btn:hover{
     background-color: #FB7DA8;

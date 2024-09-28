@@ -113,7 +113,8 @@
 @media (min-width: 500px) {
   .hero_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap:2.5rem;
   }
   .resume_photo {
     width: 15rem;
