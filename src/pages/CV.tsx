@@ -3,15 +3,12 @@ import "../style/generel.css";
 import Hero from "../components/Hero";
 import Skills from "../components/skill/Skills";
 import AboutMe from "../components/AboutMe";
-import Experiences from "../components/experience/Experiences";
-import Hobbies from "../components/hobby/Hobbies";
 import Grades from "../components/grade/Grades";
 import Contact from "../components/Contact";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { useRef, useState, useEffect } from "react";
 import BurgerMenu from "../components/BurgerMenu";
-import Folder from "../components/work/Folder";
 import Folders from "../components/work/Folders";
 import JobDescriptions from "../components/jobDescription/JobDescriptions";
 

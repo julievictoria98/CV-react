@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IoIosArrowDown, IoIosArrowUp, IoMdArrowDropdown, IoMdArrowDropup  } from "react-icons/io";
+import { IoMdArrowDropdown, IoMdArrowDropup  } from "react-icons/io";
 // import SkillInfo from "./SkillInfo";
 import s from "../../style/skill.module.css";
 

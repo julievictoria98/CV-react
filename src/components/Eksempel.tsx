@@ -20,6 +20,7 @@ function Eksempel({headerText, footerText}: EksempelProps) {
         </div>
     )
 }
+export default Eksempel;
 
 
 /*
