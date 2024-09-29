@@ -29,7 +29,7 @@
   --subtitle-size: calc(0.8rem + 1vw); 
   --h1-size: calc(1.5rem + 2vw); 
   --h2-size: calc(1.3rem + 1.2vw);
-  --h3-size: calc(1.1rem + 0.7vw); 
+  --h3-size: calc(0.85rem + 0.7vw); 
   --h4-size: calc(0.9rem + 0.5vw); 
   --p-size: calc(0.8rem + 0.3vw); 
 }
@@ -38,7 +38,9 @@ body {
 background-color: rgb(238, 238, 238);
   margin: 0;
   padding: 0;
+  
   background-image: url(../imgs/dotted-pattern.png);
+
 }
 
 
