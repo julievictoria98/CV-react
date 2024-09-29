@@ -1,7 +1,6 @@
 import "../style/footer.css";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import logo from "../imgs/logo.svg";
 
