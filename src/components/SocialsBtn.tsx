@@ -1,11 +1,14 @@
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
+
 import { ReactNode } from "react";
 import s from "../style/socialsBtn.module.css";
 
 const iconsArray = [
     { icon: <FaPhoneAlt style={{ color: "black" }}  />, alt: "Phone Icon" },
     { icon: <MdEmail style={{ color: "black" }}  />, alt: "Email Icon" },
+    { icon: <FaLinkedin style={{ color: "black" }}  />, alt: "LinkedIn Icon" },
 ];
 
 interface SocialsBtnProps {

@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 import JuliePhoto from "../imgs/polaroid-img.png";
 import s from "../style/hero.module.css";

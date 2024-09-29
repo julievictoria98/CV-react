@@ -7,21 +7,8 @@ export function AboutMe() {
         <h1 className="h2">About me</h1>
         <div className={s.about_me_flex}>
           <p>
-            My name is Julie, and I am passionate and curious multimedia design
-            student entering my second year at KEA - Copenhagen school of design
-            and technology. The first years as a student consisted of a lot of
-            trial and error and resulted in me gaining a solid foundation in
-            front-end development, including HTML, CSS, and JavaScript, as well
-            as an understanding of design theory and conventions. During this
-            summer vacation, I have been learning the React framework, which I
-            used to create this resume. In the upcoming semester, our focus will
-            be exclusively on front-end development, with an emphasis on React.
-            I am excited to deepen my understanding of this framework that I
-            have already come to enjoy. For details on my expertise with
-            different frameworks and design tools, please see the section below.
-            I am currently seeking a part-time job where I can apply my skills
-            in front-end development and contribute to real-world projects,
-            while continuing to grow both technically and creatively
+            Hi, my name is Julie and I'm a danish Multimedia Design student in my third semester, living in Copenhagen.I have chosen to focus on front-end development for the rest of my education as I enjoy creating engaging, user-friendly, and visually appealing websites. I have a solid foundation in HTML, CSS, JavaScript, and we have begun learning other frameworks like React and Astro which emphasize atomic design and component-based architecture.I'm looking for an internship starting in January 2025, where I can further develop my skills and contribute to meaningful projects. The internship is for 10 weeks and is unpaid.I love to create and am always eager to learn new skills. This past summer, I began my journey with React and explored game development using tools like Godot. Additionally, I've started to delve into the basics of back-end development, expanding my skill set and broadening my understanding of the full development process.If you're interested in hearing more, you can check out a more in-depth description of my skills and the types of tasks I could take on during an internship by scrolling further down this page. 
+
           </p>
           <div className={s.info_flex_column}>
             <div>

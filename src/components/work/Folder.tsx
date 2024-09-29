@@ -8,7 +8,7 @@ workLink: string;
 
 function Folder({ folderName, workLink }: FolderProps) {
   return (
-  <a href={workLink}> 
+  <a href={workLink} target='blank'> 
     <div className={s.folder}>
       <h1 className={s.folder_name}>{folderName}</h1>
     </div>

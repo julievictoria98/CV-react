@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import e from "../../style/experince.module.css"; 
 import StarIcon from "../../imgs/star-icon.svg";
 
