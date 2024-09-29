@@ -52,13 +52,13 @@ function NavBar({
           onClick={scrollToExperiences}
           className={activeSection === "experiences" ? s.active : ""}
         >
-          Former Jobs
+          Potential Tasks
         </button>
         <button
           onClick={scrollToHobbies}
           className={activeSection === "hobbies" ? s.active : ""}
         >
-          Hobbies
+          Former Work
         </button>
         <button
           onClick={scrollToContact}
