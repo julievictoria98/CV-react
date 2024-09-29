@@ -25,7 +25,6 @@ function Footer() {
           >
             <div className="contact_socials_flex">
               <FaLinkedin style={{ color: "black" }} />
-
               <p>LinkedIn</p>
             </div>
           </a>
