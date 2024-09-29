@@ -1,6 +1,4 @@
 import s from "../style/hero.module.css";
-import { MdEmail } from "react-icons/md";
-import { FaLinkedin } from "react-icons/fa";
 import HeroImg from "./HeroImg";
 import SocialsBtn from "./SocialsBtn";
 
