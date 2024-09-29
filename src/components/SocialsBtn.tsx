@@ -1,8 +1,6 @@
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
-
-import { ReactNode } from "react";
 import s from "../style/socialsBtn.module.css";
 
 const iconsArray = [
