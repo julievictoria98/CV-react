@@ -2,6 +2,7 @@
   display: flex;
   margin-left: var(--extra-padding);
   margin-right: var(--extra-padding);
+  margin-top: 5rem;
   justify-content: center;
   justify-items: center;
    background-color: #fccaa4;
@@ -57,6 +58,10 @@
   .contact {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .contacts-flex::before{
+    scale: 0.7;
   }
  
 }

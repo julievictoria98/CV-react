@@ -47,13 +47,16 @@
   padding-bottom: 10rem;
   margin-bottom: 1.5rem;
 }
-.resume_photo {
+/* .resume_photo {
    width: 10rem; 
-  position: relative;
-  /* border: 20px solid rgb(220, 220, 220); */
   
-  
-}
+} */
+
+ .resume_photo {
+    width: 18rem;
+      position: relative;
+
+  }
 
 .img_container{
   position: relative;
@@ -76,7 +79,7 @@
   background-image: url(../imgs/clip1.png);
   height: 6.8rem;
   width: 6.7rem;
-  scale: 0.9;
+  scale: 0.7;
   display: inline-block;
   z-index: 2;
   top:-2rem;
@@ -110,18 +113,15 @@
 }
 
 
-@media (min-width: 500px) {
+@media (min-width: 400px) {
   .hero_grid {
     display: grid;
     grid-template-columns: 1fr;
     gap:2.5rem;
   }
-  .resume_photo {
-    width: 15rem;
-  }
-  .h1 {
-  }
+ 
 }
+
 
 @media (min-width: 768px) {
   .hero_grid {
@@ -131,22 +131,29 @@
     /* margin-top: 1rem; */
   }
 
-  .resume_photo {
-    width: 22rem;
-  }
+
 
   .flex_column {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
+  .img_container::before{
+    scale: 0.9;
+  }
+ 
 }
 
-@media (min-width: 1000px) {
-  .hero_flex {
+@media (min-width: 800px) {
+       .hero_flex {
     flex-direction: row;
     gap: 2rem;
   }
+
+}
+
+@media (min-width: 1000px) {
+
   .resume_photo {
     width: 20rem;
   }

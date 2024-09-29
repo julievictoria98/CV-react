@@ -9,7 +9,7 @@
     text-align: center;
     border: 2px solid black;
     padding-inline: 1rem;
-    padding-top: 2rem;  
+    padding-top: 2rem; 
 }
 
 .job_flex{
@@ -35,6 +35,7 @@
       grid-column: content;
       
     } 
+    margin-top: 4rem;
 }
 
 .jobname{

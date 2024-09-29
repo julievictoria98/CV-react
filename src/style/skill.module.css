@@ -1,13 +1,11 @@
+
 .skill_boxes_grid {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   gap: 2rem;
   row-gap: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  /* padding-left: 2rem;
-  padding-right: 2rem; */
+  margin-top: 10rem;
 }
 
 .skill_boxes_grid h1 {
@@ -96,8 +94,6 @@
     justify-items: left;
     gap: 2rem;
     row-gap: 3rem;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
     /* padding-left: 8rem;
     padding-right: 8rem; */
   }

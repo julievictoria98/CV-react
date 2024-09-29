@@ -1,6 +1,4 @@
-body{
-  background-image: url(../imgs/dotted-pattern.png);
-}
+
 .grade-image-container {
   background-image: url(../assets/Icons/doodle-ring.svg);
   background-size: cover;
@@ -9,6 +7,7 @@ body{
   text-align: center;
   align-content: center;
   margin-top: 2rem;
+  
 }
 
 .grade-flex > :nth-child(2) {
@@ -46,11 +45,13 @@ body{
 .grades-flex {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   padding-left: var(--extra-padding);
   padding-right: var(--extra-padding);
 }
 
+ .grades {
+   margin-top: 8rem;
+  }
 @media (max-width: 500px) {
   .grade-text {
     width: 22rem;
@@ -77,8 +78,7 @@ body{
   }
 
   .grades {
-    /* margin-top: 8rem; */
-    margin-bottom: 8rem;
+   margin-top: 8rem;
   }
 
   .grade-text {
