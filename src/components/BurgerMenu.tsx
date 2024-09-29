@@ -54,14 +54,14 @@ function BurgerMenu({
               About Me
             </li>
             <li onClick={() => handleMenuItemClick(scrollToSkills)}>Skills</li>
-            <li onClick={() => handleMenuItemClick(scrollToExperiences)}>
-              Former Jobs
-            </li>
-            <li onClick={() => handleMenuItemClick(scrollToHobbies)}>
-              Hobbies
-            </li>
             <li onClick={() => handleMenuItemClick(scrollToGrades)}>
               Exams & Grades
+            </li>
+            <li onClick={() => handleMenuItemClick(scrollToExperiences)}>
+              Potential Tasks
+            </li>
+            <li onClick={() => handleMenuItemClick(scrollToHobbies)}>
+              Former Work
             </li>
             <li onClick={() => handleMenuItemClick(scrollToContact)}>
               Contact
