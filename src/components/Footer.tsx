@@ -13,10 +13,6 @@ function Footer() {
         <div>
           <h2 className="h4">Contact</h2>
           <div className="contact_socials_flex">
-            <FaPhoneAlt style={{ color: "black" }} />
-            <p>+45 50 52 34 91</p>
-          </div>
-          <div className="contact_socials_flex">
             <MdEmail style={{ color: "black" }} />
             <p>julieradant@gmail.com</p>
           </div>
