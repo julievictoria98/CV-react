@@ -113,7 +113,7 @@
 }
 
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   .hero_grid {
     display: grid;
     grid-template-columns: 1fr;
