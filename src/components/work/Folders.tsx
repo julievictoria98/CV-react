@@ -7,9 +7,9 @@ function Folders() {
     <>
     <h1 className='h2'>Former Work</h1>
     <div className={s.folders_grid}>
-        <Folder folderName="Game (first semester)" workLink="https://julievictoria98.github.io/Guardian-of-the-wild/"/>
-        <Folder folderName="Assignment (third semester)" workLink="https://neon-concha-50d68d.netlify.app/casestudy/"/>
-        <Folder folderName="Game (third semester)" workLink="https://julievictoria98.github.io/rockpaperscissors/"/>
+        <Folder folderName="Game (First Semester)" workLink="https://julievictoria98.github.io/Guardian-of-the-wild/"/>
+        <Folder folderName="Project - CPH Light Festival" workLink="https://main--clf11.netlify.app/"/>
+        <Folder folderName="Exam Project 2024" workLink="https://sophiakhaled.netlify.app/"/>
     </div>
     </>
   );
