@@ -43,14 +43,8 @@
   justify-items: center;
   align-items: center;
   padding-bottom: 3rem;
-  /* margin-top: 3rem; */
   padding-bottom: 10rem;
-  margin-bottom: 1.5rem;
 }
-/* .resume_photo {
-   width: 10rem; 
-  
-} */
 
  .resume_photo {
     width: 18rem;
@@ -62,16 +56,6 @@
   position: relative;
   z-index: 1;
 }
-
-/* .img_container::after{
-  content: "";
-    background-image: url(../imgs/star-icons.svg);
-    height: 4rem;
-    width: 5rem;
-     display: inline-block;
-
-
-} */
 
 .img_container::before{
   position: absolute;
@@ -139,7 +123,7 @@
     gap: 2rem;
   }
   .img_container::before{
-    scale: 0.9;
+    scale: 0.8;
   }
  
 }
@@ -155,7 +139,7 @@
 @media (min-width: 1000px) {
 
   .resume_photo {
-    width: 20rem;
+    width: 19rem;
   }
 }
 @media (min-width: 1120px) {

@@ -28,7 +28,7 @@ function NavBar({
           onClick={scrollToHero}
           className={activeSection === "hero" ? s.active : ""}
         >
-          Hero
+          Top
         </button>
         <button
           onClick={scrollToAboutMe}

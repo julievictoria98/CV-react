@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import JuliePhoto from "../imgs/polaroid-img.png";
+import JuliePhoto from "../imgs/polaroid-no-bg-color2.png";
 import s from "../style/hero.module.css";
 
 function HeroImg(){
