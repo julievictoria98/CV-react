@@ -16,7 +16,7 @@ function Skills() {
           <div>
             <Skill
               skillName="JavaScript"
-              skillText="During my studies I've been learning the theory behind JavaScript, and I have a solid grasp of key concepts like: variable, as well as understanding different data types I'm also familiar with using various operators and writing conditional statements like if, else, and switch.In the browser, I've practiced DOM manipulation by selecting elements with methods like getElementById and querySelector, and modifying them with methods like appendChild and createElement. I can also handle common events using addEventListener.Additionally, I have knowledge of array methods such as .map(), .filter(), .reduce(), and .forEach()."
+              skillText="During my studies, I have developed a solid grasp of JavaScript fundamentals, including variables, data types, and operators. I am comfortable writing conditional statements such as if, else, and switch. I also have experience working with the DOM, selecting elements using methods like getElementById and querySelector, and modifying them with methods like appendChild and createElement. Additionally, I am proficient in handling common browser events with addEventListener. I understand how to define and use functions effectively, including passing parameters to functions and working with return values. Moreover, I am familiar with array methods like .map(), .filter(), .reduce(), and .forEach() for efficient data manipulation"
             />
           </div>
           <div>
@@ -28,7 +28,7 @@ function Skills() {
           <div>
             <Skill
               skillName="React"
-              skillText="During this summer vacation, I have been learning the React framework, which I used to create this resume. My prior experience with Astro, which also employs a component-based architecture, made the learning process easier. I actively engaged with key features such as props and hooks and I have particularly enjoyed using React icons, which has made the whole design process easy. I am excited to continue learning more about this framework in my upcoming semester."
+              skillText="During this summer vacation, I have been learning the React framework, which I used to create this resume. My prior experience with Astro, which also employs a component-based architecture, made the learning process easier. I actively engaged with key features such as props and hooks and I have particularly enjoyed using React icons, which has made the whole design process easy. I am excited to continue learning more about this framework in my current semester."
             />
           </div>
           <div>
